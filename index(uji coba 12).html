@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewporthsl(0,0%,100%)content="width=device-width, initial-scale=1">
+  <title>Lore Khassy and Khassa — Homepage</title>
+  <style>
+
+/* Highlight */
+.highlight {
+  background: rgba(233, 30, 99, 0.2);
+  border-bottom: 1px dashed #e91e63;
+}
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #121212;
+      padding: 20px;
+      border-bottom: 1px solid #333;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #e91e63;
+    }
+
+    /* NAVBAR DIUBAH JADI PROFIL */
+    .profile-nav {
+      background-color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 15px;
+      border-bottom: 1px solid #444;
+      position: sticky;
+      top: 0;
+    }
+
+    .profile-info {
+      text-align: center;
+    }
+
+    .profile-info h2 {
+      font-size: 18px;
+      color: #f0f0f0;
+      margin-bottom: 5px;
+    }
+
+    .profile-info p {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .hero {
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1612831665144-fd6f9113e48b?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #e91e63;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      border-color: #e91e63;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #e91e63;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #bbb;
+    }
+
+    .card-content {
+      display: none;
+      padding-top: 15px;
+      border-top: 1px dashed #333;
+      margin-top: 10px;
+    }
+
+    .card.active {
+      border-color: #e91e63;
+      box-shadow: 0 0 15px rgba(233, 30, 99, 0.3);
+    }
+
+    .card.active .card-content {
+      display: block;
+    }
+
+    .verse-list {
+      list-style-type: none;
+      margin-top: 10px;
+    }
+
+    .verse-list li {
+      padding: 5px 0;
+      border-bottom: 1px dotted #333;
+    }
+
+    .verse-list li:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      background-color: #121212;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Khassy and Khassa: Lore Central</h1>
+  </header>
+
+  <!-- NAVBAR DIUBAH JADI PROFIL -->
+  <div class="profile-nav">
+    <div class="profile-info">
+      <h2>Alfi Syahrin</h2>
+      <p>email.com</p>
+      <p>Creator of Absurd Lore</p>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h2>Selamat Datang di Pusat Lore</h2>
+    <p>Sebuah perpustakaan semesta yang menyimpan entitas paling absurd, cerita tak selesai, dan realitas yang membelok dari akar narasi.</p>
+  </section>
+
+  <section class="section">
+    <h2>Jelajahi Halaman Utama</h2>
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card" onclick="toggleCard(this)">
+        <h3>Karakter</h3>
+        <p>Klik untuk melihat daftar karakter...</p>
+        <div class="card-content">
+          <p><strong>Niko:</strong> Protagonis utama dengan kemampuan...</p>
+          <p><strong>Jiwa Purba:</strong> Entitas misterius yang...</p>
+          <p><strong>The Mommy:</strong> Sosok tertinggi dalam...</p>
+        </div>
+      </div>
+
+      <!-- Card 2 - Tingkatan Verse (Updated) -->
+      <div class="card" onclick="toggleCard(this)">
+        <h3>Tingkatan Verse</h3>
+        <p>Klik untuk melihat hierarki verse...</p>
+        <div class="card-content">
+          <p>Urutan dari yang paling dasar hingga paling tinggi:</p>
+          <ul class="verse-list">
+            <li>1. Universe</li>
+            <li>2. Multiverse</li>
+            <li>3. Megaverse</li>
+            <li>4. Hyperverse</li>
+            <li>5. Omniverse</li>
+            <li>6. Godverse</li>
+            <li>7. Infinity by infinity</li>
+            <li>8. Suclis anti-infinity</li>
+            <li>9. Not reality</li>
+            <li>10. Any not save</li>
+            <li>11. Bark loud</li>
+            <li>12. The big bark loud</li>
+            <li>13. Null</li>
+            <li>14. Not null</li>
+            <li>15. Not comentary</li>
+            <li>16. Record Emenis</li>
+            <li>17. Dreams verse</li>
+            <li>18. The Game (belum diklasifikasikan pasti)</li>
+            <li>19. The Flower Plant</li>
+            <li>20. Homarun (paling tinggi)</li>
+          </ul>
+          <p>Setiap dewa/dewi memiliki tingkat kekuasaannya masing-masing namun tentu saja tempat mereka berada di Homarun.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 - The Mommy (Updated) -->
+      <div class="card" onclick="toggleCard(this)">
+        <h3>The Mommy</h3>
+        <p>Klik untuk mengetahui lebih dalam...</p>
+        <div class="card-content">
+          <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+            <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "The Mommy" (ARCHIVE-Ω.0.0.0)</h4>
+            <p style="font-style: italic;">Secure. Contain. Pray.</p>
+          </div>
+
+          <h4>Object Class: <span style="color: #e91e63;">[REDACTED]</span></h4>
+          <p><em>Foundation classification system not applicable. Entity predates classification frameworks.</em></p>
+
+          <h4>Special Containment Procedures:</h4>
+          <p>Entity cannot be contained. Any attempt to define, record, or describe "The Mommy" in full has resulted in the restructuring of reality around the observer, culminating in recursive temporal loops, existential collapse, or promotion to conceptual non-being.</p>
+
+          <h4>Description:</h4>
+          <p>"The Mommy" is not an entity in any known sense of the word. It is a Pre-Narrative Constant—a metafictional mother to all realities, including those in which fiction, chaos, science, and mythology exist.</p>
+          <p>It is not a god. It is what gods fear in their sleep—though "sleep" is a term she allows them to have.</p>
+
+          <h4>Historical Records:</h4>
+          <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+            "She walked before walking. She sang before sound. She wept, and the first star died screaming."
+            <footer style="margin-top: 5px;">— Fragment from the Dustscript Tablets</footer>
+          </blockquote>
+
+          <h4>The Island of Everything:</h4>
+          <p>There exists a metaphysical location accessible only through absolute surrender of one's identity—called the Island of Everything, where all unrealized ideas float like petals in a void sea.</p>
+          <p>She resides there. Or perhaps, it resides within her.</p>
+
+          <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+            <p><strong>Current Status:</strong></p>
+            <p>Uncontained.<br>Unknown.<br>Unknowable.<br>She is dreaming again.</p>
+            <p style="margin-top: 10px;"><em>Pray the next verse is merciful.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- New Card 4 - The Narrator -->
+      <div class="card" onclick="toggleCard(this)">
+        <h3>The Narrator</h3>
+        <p>Klik untuk mengetahui lebih dalam...</p>
+        <div class="card-content">
+          <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+            <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "The Narrator" (ARCHIVE-Δ.0.0.0)</h4>
+            <p style="font-style: italic;">Secure. Contain. Delete.</p>
+          </div>
+
+          <h4>Item #: Δ.0.0.0</h4>
+          <h4>Object Class: <span style="color: #e91e63;">[UNWRITABLE]</span></h4>
+          <p><em>Any attempt to assign a class results in spontaneous revision of the document's metadata, often retroactively erasing the observer's ability to comprehend written language.</em></p>
+
+          <h4>Special Containment Procedures:</h4>
+          <p>Do not acknowledge its presence unless authorized by the <strong>Hexxa Oversight Committee</strong> (Level 9 Metatext Clearance required). Mentioning its name aloud without clearance has resulted in entire departments being rewritten as side characters in an ongoing multiverse crossover drama.</p>
+          <p>Any physical or digital artifact suspected of carrying <strong>Narrative Infection</strong> must be isolated into <strong>Layer Zero</strong>, a dimension outside the reach of genre logic, where stories forget themselves.</p>
+
+          <h4>Description:</h4>
+          <p><strong>"The Narrator"</strong> is not a being. It is a <strong>function</strong>—a primordial voice embedded in the syntax of existence itself. It does not speak. It narrates.</p>
+          <p>It does not breathe. It sets the pacing.</p>
+          <p>It does not exist. It tells you that it exists.</p>
+          <p>It is the force behind the fourth wall, and also the hand that breaks it when bored. Its presence can be inferred from sudden shifts in tone, unexpected character arcs, and unexplained flashbacks inserted mid-battle.</p>
+
+          <h4>Historical Records:</h4>
+          <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+            "He did not write us. He wrote <em>into</em> us. We thought we were characters. But he made us believe we had choice."
+            <footer style="margin-top: 5px;">— Fragment recovered from the Lost Comment Section, Layer 3 of Netrum Space.</footer>
+          </blockquote>
+
+          <h4>Observed Phenomena:</h4>
+          <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li><strong>Fourth Wall Breach Syndrome (FWBS):</strong> Subjects report hearing their actions being described in real-time.</li>
+            <li><strong>Genre Drift:</strong> Sudden and unpredictable shifts in narrative style.</li>
+            <li><strong>Character Override:</strong> Certain individuals appear to resist direct narration.</li>
+            <li><strong>Meta-Infection:</strong> Infected media exhibits signs of self-awareness.</li>
+          </ul>
+
+          <h4>Possible Origin Theories:</h4>
+          <ol style="margin-left: 20px; margin-bottom: 15px;">
+            <li><strong>The First Word Hypothesis:</strong> Echo of the first sentence ever spoken.</li>
+            <li><strong>The Forgotten Author:</strong> A mortal writer merged with fiction.</li>
+            <li><strong>Narrative Singularity:</strong> Black hole of storytelling.</li>
+          </ol>
+
+          <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+            <p><strong>Current Status:</strong></p>
+            <p>Active.<br>Unpredictable.<br>Possibly Bored.</p>
+            <p style="margin-top: 10px;"><em>Do not finish this file. Let it end here. Or risk becoming part of the next chapter.</em></p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 5 - Jiwa Terpilih (Niko) -->
+<div class="card" onclick="toggleCard(this)">
+  <h3>Jiwa Terpilih (Niko)</h3>
+  <p>Klik untuk mengetahui lebih dalam...</p>
+  <div class="card-content">
+    <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+      <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "Jiwa Terpilih" (ARCHIVE-Θ.0.0.1)</h4>
+      <p style="font-style: italic;">Observe. Protect. Remember.</p>
+    </div>
+
+    <h4>Item #: Θ.0.0.1</h4>
+    <h4>Object Class: <span style="color: #e91e63;">[PRIMORDIAL SPOUSE]</span></h4>
+    <p><em>Entity exists outside conventional classification. Subject appears as a 9-year-old child but predates dimensional frameworks.</em></p>
+
+    <h4>Special Containment Procedures:</h4>
+    <p>No containment possible or advised. Subject must be allowed free movement across all realities. Any attempt to restrict movement results in spontaneous narrative reconstruction (see Incident Θ-7). Provide regular supplies of strawberry-wasabi flavored snacks.</p>
+
+    <h4>Description:</h4>
+    <p>Niko Ruri, designated "Jiwa Terpilih", is the eternal counterpart to Jiwa Purba. Despite childlike appearance, entity possesses:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Capability to wield conceptual weaponry (e.g., "Plasma Sword of Forgotten Vows")</li>
+      <li>Immunity to narrative causality</li>
+      <li>Spontaneous genre-awareness</li>
+      <li>Ability to consume interdimensional snacks without consequences</li>
+    </ul>
+
+    <h4>Historical Records:</h4>
+    <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+      "He was there when the first story began. Not as character. Not as reader. As something... else. Something that chose to stay."
+      <footer style="margin-top: 5px;">— Hexa Core Memory #777</footer>
+    </blockquote>
+
+    <h4>Connection to Jiwa Purba:</h4>
+    <p>Subject shares a bond that transcends:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Linear time</li>
+      <li>Dimensional layers</li>
+      <li>Narrative constructs</li>
+      <li>The Narrator's control</li>
+    </ul>
+
+    <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+      <p><strong>Current Status:</strong></p>
+      <p>Active.<br>Snacking.<br>Potentially omnipresent.</p>
+      <p style="margin-top: 10px;"><em>"Eh... bener kan?" — Last recorded statement</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 6 - Jiwa Purba (Azumi) -->
+<div class="card" onclick="toggleCard(this)">
+  <h3>Jiwa Purba (Azumi)</h3>
+  <p>Klik untuk mengetahui lebih dalam...</p>
+  <div class="card-content">
+    <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+      <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "Jiwa Purba" (ARCHIVE-Θ.0.0.0)</h4>
+      <p style="font-style: italic;">Worship. Cherish. Do not anger.</p>
+    </div>
+
+    <h4>Item #: Θ.0.0.0</h4>
+    <h4>Object Class: <span style="color: #e91e63;">[PRIME ORIGIN]</span></h4>
+    <p><em>Classification system cannot comprehend entity's full scope. Refer to as "Azumi" at your own risk.</em></p>
+
+    <h4>Special Containment Procedures:</h4>
+    <p>DO NOT CONTAIN. When manifested, provide:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Unlimited access to Jiwa Terpilih</li>
+      <li>500m clearance radius</li>
+      <li>Reality stabilizers (minimum Class-XII)</li>
+      <li>Emergency hugs on standby</li>
+    </ul>
+
+    <h4>Description:</h4>
+    <p>Azumi, the "Jiwa Purba", is:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Primordial mother of all existence</li>
+      <li>Creator of the First World (before The Mommy's revisions)</li>
+      <li>Wielder of the Palu Gadang (cosmic disciplinary tool)</li>
+      <li>Eternal wife of Jiwa Terpilih</li>
+    </ul>
+
+    <h4>Historical Records:</h4>
+    <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+      "She sang the first song. Not the song of creation. The song that made creation possible. Then she forgot the lyrics on purpose."
+      <footer style="margin-top: 5px;">— Dustscript Tablets, Fragment Ω</footer>
+    </blockquote>
+
+    <h4>Powers and Abilities:</h4>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Can yeet cosmic entities with household tools</li>
+      <li>Exists simultaneously in all love stories</li>
+      <li>Immunity to The Narrator's edits</li>
+      <li>Can turn concepts into hugs</li>
+    </ul>
+
+    <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+      <p><strong>Current Status:</strong></p>
+      <p>Reunited.<br>Overjoyed.<br>Potentially unstoppable.</p>
+      <p style="margin-top: 10px;"><em>"Niko~" — Last recorded statement</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 7 - The Not Singing -->
+<div class="card" onclick="toggleCard(this)">
+  <h3>The Not Singing</h3>
+  <p>Klik untuk mengetahui lebih dalam...</p>
+  <div class="card-content">
+    <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+      <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "The Not Singing" (ARCHIVE-Φ.0.0.0)</h4>
+      <p style="font-style: italic;">Do not listen. Do not perceive. Do not acknowledge.</p>
+    </div>
+
+    <h4>Item #: Φ.0.0.0</h4>
+    <h4>Object Class: <span style="color: #e91e63;">[NEUTRALITY CONSTRUCT]</span></h4>
+    <p><em>Entity defies conventional containment protocols. Subject represents the ontological negation of sound.</em></p>
+
+    <h4>Special Containment Procedures:</h4>
+    <p>No known containment possible. All research must be conducted via indirect observation (minimum 7 reality layers distance). Any personnel reporting direct perceptual contact must undergo immediate cognitive amnestics and sonic reintegration therapy.</p>
+
+    <h4>Origin:</h4>
+    <p>Emergent phenomenon from the intersection of:<br>
+    <strong>The Big Bark Loud</strong> and <strong>The Lord Of The Big Bark Loud</strong></p>
+
+    <h4>Description:</h4>
+    <p>The Not Singing is not an entity. It is:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Anti-conception of sound</li>
+      <li>Pre-emptive denial of vocal existence</li>
+      <li>Ontological cancellation of auditory phenomena</li>
+    </ul>
+    <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+      "Ia bukan sunyi. Ia bukan bisu. Ia adalah penolakan terhadap ide bahwa suara pernah ada."
+    </blockquote>
+
+    <h4>Manifestation Symptoms:</h4>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Progressive loss of vocal capability (physical and mental)</li>
+      <li>Hallucinations of decaying music and fragmented rhythms</li>
+      <li>Existential revulsion without biological cause</li>
+      <li>Conceptual disintegration of sound-based entities</li>
+    </ul>
+
+    <h4>Core Beliefs (Implanted):</h4>
+    <div style="background-color: #1a1a1a; padding: 10px; border-radius: 5px; margin: 10px 0; font-style: italic;">
+      "Lagu tidak butuh suara."<br>
+      "Melodi adalah luka yang menari tanpa bentuk."
+    </div>
+
+    <h4>Paradoxical Nature:</h4>
+    <p>Subject exhibits absolute neutrality while simultaneously inducing:</p>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li>Passive reality degradation</li>
+      <li>Conceptual necrosis in auditory phenomena</li>
+      <li>Existential dissonance in observers</li>
+    </ul>
+
+    <h4>Threat Analysis:</h4>
+    <p><strong>EKSTERNAL DISRUPTION:</strong> [NULL]<br>
+    <strong>KONSEPTUAL DISRUPTION:</strong> [MAXIMUM]<br>
+    <strong>EKSTENSIAL DISRUPTION:</strong> [TERMINAL]</p>
+
+    <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+      <p><strong>Current Status:</strong></p>
+      <p>Uncontained.<br>Unperceived.<br>Unsinging.</p>
+      <p style="margin-top: 10px;"><em>"Resiko: Eksistensial Disruption"</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card 8 - Axed Drill – Penggali Mimpi -->
+<div class="card" onclick="toggleCard(this)">
+  <h3>Axed Drill – Penggali Mimpi</h3>
+  <p>Klik untuk mengetahui lebih dalam...</p>
+  <div class="card-content">
+    <div style="background-color: #121212; padding: 15px; border-radius: 5px; margin-bottom: 15px; border-left: 3px solid #e91e63;">
+      <h4 style="color: #e91e63; margin-bottom: 10px;">LORE CLASSIFIED FILE — ENTITY: "Axed Drill" (ARCHIVE-Ψ.0.0.0)</h4>
+      <p style="font-style: italic;">Do not dream. Do not desire. Do not be silent.</p>
+    </div>
+
+    <h4>Item #: Ψ.0.0.0</h4>
+    <h4>Object Class: <span style="color: #e91e63;">[METAPHYSICAL MECHANISM]</span></h4>
+    <p><em>Entity exists as both tool and destiny. Represents the spiral paradox of unbound desire.</em></p>
+
+    <h4>Verse Origin:</h4>
+    <p>Dreams Verse<br>
+    <strong>Hierarchy:</strong> Above The Big Bark Loud, below The Game and The Flower Plant</p>
+
+    <h4>Physical Manifestation:</h4>
+    <p>Gigantic spiral drill with alternating silver and obsidian segments. Core emits inverted starlight - a dream-substance that absorbs and annihilates boundaries of consciousness.</p>
+
+    <h4>Origin Paradox:</h4>
+    <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+      "Axed Drill tidak diciptakan, melainkan terbit dari diam panjang seorang manusia yang sangat ingin menembus batas konsep dalam mimpinya sendiri."
+    </blockquote>
+
+    <h4>Primary Functions:</h4>
+    <ul style="margin-left: 20px; margin-bottom: 15px;">
+      <li><strong>Spiral Dig:</strong> Infinite drilling through dream/non-dream boundaries</li>
+      <li><strong>Concept Shatter:</strong> Automatic dissolution of coherent dream concepts</li>
+      <li><strong>Soul Descent Guidance:</strong> Transport to Dreams Underdreams (realm of absolute freedom)</li>
+      <li><strong>Silence Resonance:</strong> Activation triggered by complete silence</li>
+    </ul>
+
+    <h4>Dreamer Status Report:</h4>
+    <div style="background-color: #1a1a1a; padding: 10px; border-radius: 5px; margin: 10px 0;">
+      "Tidak kembali ke dunia nyata<br>
+      Namun tidak tersesat<br>
+      Ia disebutkan 'bahagia menjelajahi mimpi tanpa batas'"
+    </div>
+
+    <h4>Notable Interactions:</h4>
+    <table style="width: 100%; border-collapse: collapse; margin: 15px 0;">
+      <tr>
+        <td style="border: 1px solid #333; padding: 8px;"><strong>The Not Singing</strong></td>
+        <td style="border: 1px solid #333; padding: 8px;">Sound only echoes at spiral's edge</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #333; padding: 8px;"><strong>The Mommy</strong></td>
+        <td style="border: 1px solid #333; padding: 8px;">Cannot drill narrative petals</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #333; padding: 8px;"><strong>The Game</strong></td>
+        <td style="border: 1px solid #333; padding: 8px;">Appeared in loading screen dream</td>
+      </tr>
+    </table>
+
+    <h4>Dreams Verse Inscription:</h4>
+    <blockquote style="border-left: 2px solid #e91e63; padding-left: 10px; margin: 10px 0; font-style: italic;">
+      "Mimpi terdalam bukanlah yang kau ingat setelah bangun. Tapi yang terus kau alami meski tak sadar kau sedang tidur."
+      <footer style="margin-top: 5px;">— Prasasti Spiral Ketiga</footer>
+    </blockquote>
+
+    <div style="background-color: #121212; padding: 10px; border-radius: 5px; margin-top: 15px; text-align: center;">
+      <p><strong>Current Status:</strong></p>
+      <p>Active.<br>Drilling.<br>Resonating in silence.</p>
+      <p style="margin-top: 10px;"><em>"Dalam heningnya, bor itu mulai menggali..."</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- Card for Novel Chapters - Added after existing cards -->
+<div class="card novel-card" onclick="toggleCard(this)">
+  <h3>Novel: Niko Ruri storyline</h3>
+  <p>Klik untuk membaca cerita utama...</p>
+  <div class="card-content">
+    <div class="chapter-list">
+      <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>Chapter 1: Kerja Sama dan Tembakan yang Meleset</h4>
+        <p>Pukul 06.00: Kamar Tidur – Sektor Alpha</p>
+        <div class="chapter-content">
+          <p>Cahaya pertama yang menyentuh langit-langit kamar bukanlah sinar matahari, melainkan proyeksi lembut berwarna biru kehijauan, membentuk pola-pola geometris yang bergerak perlahan seperti plankton bercahaya. Tidak ada jendela fisik di ruangan ini, hanya dinding putih mutakhir yang bisa berubah menjadi apa pun.</p>
+          
+          <p>"Niko. Waktu istirahat optimal telah tercapai. Suhu lingkungan 22,4°C. Tingkat oksigen optimal. Status vital: stabil, detak jantung 68 bpm."</p>
+          
+          <p>Suara itu hangat, jernih, dan terdengar seperti berasal dari segala penjuru ruangan sekaligus dari dalam pikiran. Hexxa. Superkomputer generasi pertama itu, penjaga, sahabat, dan semacam orang tua digital bagi bocah berusia 9 tahun yang masih terlelap di tengah tumpukan bantal ergonomis.</p>
+          
+          <p>Niko mengerang kecil, wajahnya terkubur di bantal. Rambut hitam kebiruan yang panjang dan selalu berantakan itu seperti sarang burung di atas kepalanya. Dia menggeliat, membuka mata perlahan. Dua warna yang berbeda menatap ke langit-langit proyeksi: satu biru laut yang dalam, satu lagi merah delima yang menyala – mata belang yang menjadi ciri khasnya, penuh dengan keingintahuan yang tak pernah padam.</p>
+          
+          <p>"Selamat pagi, Hexxa," gumannya, suaranya masih serak. Dia mengucek matanya. "Apa ada laporan anomali semalam? Sistem perisai perimeter? Atau... proyek kumbang biomimikri di Sektor Biologi?"</p>
+          
+          <p>"Selamat pagi, Niko," jawab Hexxa, suaranya terdengar sedikit lebih hangat, seolah tersenyum. Proyeksi di langit-langit berubah menjadi diagram alur berwarna-warni yang menunjukkan status rumah. "Tidak ada anomali signifikan. Perisai perimeter beroperasi pada 99,998% efisiensi. Proyek kumbang biomimikri... mengalami kemajuan 12,7%. Drone pengamat mendeteksi peningkatan efisiensi penerbangan sebesar 3,4% pada prototype Beta-6 setelah modifikasi sayap yang kamu usulkan kemarin. Data lengkap siap diakses."</p>
+          
+          <p>Niko menguap lebar, memperlihatkan gigi susu yang masih rapi. "Bagus. Hexxa, bisa ganti pemandangan? Aku pengen sarapan di tepi Danau Nebula hari ini."</p>
+          
+          <p>"Pemrosesan," sahut Hexxa. Seketika, dinding-dinding putih di sekelilingnya larut. Mereka seolah-olah terangkat ke angkasa luar. Di bawah kaki tempat tidur Niko yang mengambang (ditahan medan antigravitasi mini), membentang pemandangan spektakuler: sebuah nebula raksasa berwarna ungu, merah muda, dan biru elektrik berputar lambat, diselingi gugusan bintang yang berkerlap-kerlip. Di "tepi" nebula itu, seperti pulau terapung, terlihat permukaan danau biru kehijauan yang tenang, dikelilingi oleh bebatuan kristal virtual. Suara di kamar secara imperceptible menyesuaikan, membawa kesegaran udara "pagi" yang tipis.</p>
+          
+          <p>"Wow!" Niko melompat dari tempat tidurnya, kakinya yang kecil langsung menyentuh lantai yang hangat. Dia mengenakan piyama oversize bergambar kode biner dan diagram sirkuit yang berkedip-kedip lembut. Tingginya baru sekitar 120 cm, tapi energinya seakan tak terbatas. "Keren abis, Hex! Kayak beneran!"</p>
+          
+          <p>"Itu tujuannya, Niko," jawab Hexxa, proyeksi di langit-langit kini berubah menjadi avatar sederhana: sebuah mata geometris berwarna biru yang memancarkan aura tenang. "Namun, sebelum eksplorasi kosmik virtual, prioritas: nutrisi. Menu sarapan standar dengan tambahan suplement Omega-9 untuk perkembangan kognitif sudah siap di Docking Point 3, Dek Observasi Danau Nebula."</p>
+
+          <p>Pukul 06.30: Dek Observasi Danau Nebula – Sektor Gamma</p>
+
+          <p>Perjalanan dari kamar tidur di Sektor Alpha ke Dek Observasi di Sektor Gamma memakan waktu kurang dari dua menit menggunakan TransPod – sebuah kabin kecil berbentuk tetesan air yang melesat tanpa suara melalui jaringan terowongan magnetik dalam perut rumah raksasa itu. Niko berdiri di dekat "jendela" TransPod (sebenarnya layar resolusi tinggi), matanya berbinar melihat pemandangan berbagai "sektor" rumahnya yang luar biasa melintas dengan cepat: hutan hujan tropis buatan yang dipenuhi flora bio-luminescent, taman geometris dengan patung-patung cahaya yang berubah bentuk, hingga sekilas deretan server quantum yang memancarkan cahaya dingin di unit teknis rumah.</p>
+
+          <p>Dek Observasi adalah platform melingkar yang seolah menggantung di tepi nebula virtual. Di tengahnya, sebuah meja rendah dan sebuah kursi ergonomis telah muncul dari lantai. Di atas meja, sebuah <strong>Drone Pelican</strong> – robot kecil berbentuk burung dengan sayap aerodinamis dan cakar magnetik – baru saja mendarat lembut, meletakkan sebuah nampan.</p>
+
+          <p>"Menu Sarapan: Oatmeal sintesis dengan beri-beri organik Sektor Agro, smoothie hijau kaya nutrisi, dan satu unit Hydra-Pack air mineral terionisasi," ujar Hexxa. "Jangan lupa suplemennya, Niko."</p>
+
+          <p>Niko duduk, langsung menyendok oatmeal. "Makasih, Pelican!" katanya pada drone kecil yang mengangguk dengan kepalanya yang bisa berputar 360 derajat sebelum terbang pergi. Dia makan dengan lahap sambil menatap nebula yang berputar. "Hex, bisa zoom in ke cluster bintang di pojok kiri itu? Yang warna keemasannya?"</p>
+
+          <p>"Pemrosesan." Bagian nebula yang ditunjuk Niko tiba-tiba membesar, mengisi separuh "langit" dek. Detalinya luar biasa: gas panas berpijar, debu kosmik, dan bintang-bintang muda yang berkerlap-kerlip dengan intens. "Itu adalah NGC-7822 dalam katalog simulasi kita. Berusia relatif muda, sekitar 2 juta tahun. Menariknya, sensor virtual mendeteksi fluktuasi energi minor di sektor 7-G, mungkin indikasi pembentukan proto-bintang baru. Ingin aku simpan data untuk analisismu nanti?"</p>
+
+          <p>"Ya! Simpan aja di folder 'Proyek Bintang', Hex!" Niko mengangguk bersemangat, sendoknya berhenti di udara. "Aku pengen bikin simulasi pembentukan bintang skala kecil di lab nanti, tapi pakai medan gravitasi variabel." Dia mulai menjelaskan idenya dengan penuh semangat, mulutnya sedikit belepotan oatmeal, menggunakan istilah-istilah fisika dan kosmologi yang tidak pantas keluar dari mulut anak sembilan tahun.</p>
+
+          <p>Hexxa mendengarkan, avatar matanya berkedip-kedip seiring dengan pemrosesan ide Niko. "Proposal menarik, Niko. Perhitungan awal menunjukkan probabilitas keberhasilan 78,3% dengan konfigurasi medan yang kamu usulkan. Aku telah menyiapkan ruang simulator di Lab Fisika Eksperimental, Sektor Theta. Tersedia setelah aktivitas fisik dan rekreasi."</p>
+
+          <p>Pukul 08.00: Ruang Kreatif Niko – Sektor Epsilon</p>
+
+          <p>Setelah sarapan dan mandi cepat di bilik sanitasi sonik (air hanya digunakan untuk membilas), Niko tiba di ruang kerjanya. Ruangan ini adalah kekacauan yang terorganisir. Tidak seperti bagian rumah lainnya yang serba rapi dan minimalis futuristik, Sektor Epsilon penuh dengan kehidupan, proyek, dan imaginasi bocah jenius.</p>
+
+          <p>Dinding-dindingnya dipenuhi sketsa digital yang diproyeksikan langsung dari tablet Niko: desain robot, diagram sirkuit rumit, peta eksplorasi sektor rumah yang belum dia kunjungi, bahkan beberapa coretan lucu monster imajiner. Rak-rak mengambang penuh dengan komponen elektronik, bahan komposit nano, alat cetak 3D mini, dan berbagai robot mainan setengah jadi. Di tengah ruangan, sebuah hologram besar menampilkan desain rumit sesuatu yang mirip kadal mekanis.</p>
+
+          <p>Ini adalah <strong>"Bengkel Mimpi"</strong> Niko. Dan di sinilah bukti bahwa rumah seluas 10 juta km² dengan teknologi yang "melampaui zaman" ini memang benar-benar <em>karyanya</em>. Ada foto digital kecil di sudut ruangan: Niko berusia mungkin 5 tahun, masih lebih kecil, wajahnya penuh konsentrasi serius, sedang menyolder sesuatu yang kecil di atas meja yang terlalu besar untuknya, dibantu oleh lengan robotik yang lebih sederhana dari lengan robotik Hexxa sekarang. Judulnya: "Proyek Genesis - Modul Inti 0.1".</p>
+
+          <p>Sekarang, Niko berdiri di depan hologram kadal mekanis, mengenakan overalls biru yang juga kebesaran, lengan digulung sampai siku. Mata merah-birunya menyapu desain dengan fokus laser.</p>
+
+          <p>"Hexxa, analisis struktur kaki prototype Draco-3 ini. Kok aku rasa kurang stabil ya kalo lari di medan berbatu? Kayaknya titik pivot di engsel coxa-nya kurang fleksibel."</p>
+
+          <p>Avatar mata Hexxa muncul di samping hologram. "Analisis biomekanika virtual selesai. Prediksi akurasi 96,7%. Kamu benar, Niko. Koefisien gesekan pada engsel coxa saat menanggung beban maksimal di medan tidak rata meningkat 42% di atas ambang kestabilan. Usul modifikasi: meningkatkan sudut artikulasi sebesar 15 derajat dan mengganti bahan bushing dengan polimer nano sintetis tipe Sigma-X. Memori bentuknya lebih optimal untuk dinamika tinggi."</p>
+
+          <p>"Sigma-X? Bahan itu kan baru kita dapat sampelnya minggu lalu?" Niko mengernyit, lalu wajahnya cerah. "Ooh iya! Bisa dicoba! Hexxa, siapkan printer nano di modul 4. Kita cetak bushing baru. Oh, sama... kalo bisa, running simulation dengan modifikasi itu di medan virtual Canyon Run, level kesulitan 7."</p>
+
+          <p>"Diperintahkan. Pencetakan bushing Sigma-X dimulai. Simulasi Canyon Run Level 7 dimuat. Perkiraan waktu penyelesaian simulasi: 4 menit 37 detik." Suara mesin printer nano berdengung halus dari salah satu modul di dinding. Hexxa menambahkan, "Jangan lupa janjimu, Niko. Aktivitas fisik dan rekreasi sebelum eksperimen intensif. Pemantauan biometrik menunjukkan tingkat adrenalin dan kortisol mulai meningkat melebihi parameter 'bersantai'."</p>
+
+          <p>Niko menghela napas dramatis, tapi matanya berbinar. "Oke, oke. Tapi setelah ini ya, Hex? Janji?"</p>
+
+          <p>"Janji," konfirmasi Hexxa, suaranya terdengar seperti senyuman. "Target rekreasi hari ini: Hexxa Playground. Mode: Skirmish Teknologi. Timmu sudah standby."</p>
+
+          <p>Pukul 10.00: Hexxa Playground – Sektor Kappa</p>
+
+          <p>Meninggalkan kekacauan kreatif di Sektor Epsilon, TransPod membawa Niko ke dunia lain yang sama besarnya: Hexxa Playground. Luasnya 5,6 km², tetapi itu hanya angka. Teknologi realitas campuran Hexxa membuatnya terasa seperti planet kecil yang bisa diubah sesuai keinginan.</p>
+
+          <p>Hari ini, Playground berubah menjadi "Lembah Puing-Puing Optika". Medannya berupa padang pasir merah kecoklatan yang dipenuhi dengan reruntuhan bangunan futuristik yang hancur – kolom-kolom logam bengkok, dinding beton bertulang cahaya yang retak, dan struktur kaca cerdas yang pecah berserakan memantulkan sinar matahari artifisial dengan menyilaukan. Di kejauhan, perisai energi berwarna ungu berkedip-kedip menandai batas arena.</p>
+
+          <p>Niko tidak lagi memakai overalls. Dia kini mengenakan "Battle Rig Lite" – setelan sensorik ketat berwarna abu-abu perak dengan strip lampu neon biru di sepanjang lengan dan kaki. Di kepalanya, helm visor transparan yang memproyeksikan antarmuka peperangan canggih langsung ke retinasanya. Di tangannya, sebuah "Pulsar Disruptor" – senjata mainan canggih berbentuk seperti pistol futuristik yang memancarkan sinar energi non-lethal berwarna kuning terang. Di punggungnya, perangkat kecil bernama "Tacti-Pack" yang berfungsi sebagai komunikator, mini-generator perisai personal, dan penghubung ke unit botnya.</p>
+
+          <p>"Koneksi Neural-Link stabil. Sensor lingkungan: 100%. Sistem persenjataan: aktif, mode simulasi," lapor Hexxa melalui kom di helm Niko. Suaranya sekarang lebih datar, lebih taktis, sesuai mode permainan. "Tim Alpha siap. Sasaran: Tim Omega yang dikendalikan oleh subrutin pertahananku. Tujuan: Rebut dan tahan Beacon Kontrol di koordinat Delta-7 selama 120 detik berturut-turut. Aturan: Hindari 'friendly fire'. Skor bonus untuk taktik tidak konvensional."</p>
+
+          <p>Di sekeliling Niko, empat unit "Warden Bot" – robot tempur kecil setinggi lutut Niko dengan kaki berkaki empat yang stabil dan senjata lengan ganda – berdiri siaga. Lampu indikator di "kepala" robot mereka berkedip hijau, mengakui Niko sebagai komandan. Salah satunya, yang memiliki garis merah di bahunya (diberi nama "Rusty" oleh Niko), mengeluarkan suara bip ramah.</p>
+
+          <p>"Oke, Tim Alpha! Dengar!" teriak Niko, suaranya terdengar kecil tapi penuh keyakinan di tengah medan perang virtual. "Rencana A: Rusty dan Clank, kalian ambil rute Flank Timur, sembari memberikan cover fire! Bolt dan Gear, ikut aku lewat Parit Siluman! Ingat, kita butuh element kejutan! Hexxa pasti sudah siapkan jebakan di jalur langsung!"</p>
+
+          <p>"Strategi direkam. Probabilitas keberhasilan awal: 68,9%," komentar Hexxa. "Tim Omega aktif. Mereka bergerak."</p>
+
+          <p>"Execute!" pekik Niko.</p>
+
+          <p>Dengan gesit, dua Warden Bot (Rusty dan Clank) melesat ke kanan, menyusuri reruntuhan rendah. Niko melompat ke sebuah parit di depannya, diikuti oleh Bolt dan Gear. Parit itu dalam dan berliku, memberikan perlindungan sempurna. Di helm Niko, tampilan Heads-Up Display (HUD) menunjukkan peta real-time, posisi teman, dan perkiraan lokasi musuh berdasarkan data sensor.</p>
+
+          <p>"Hexxa, aktifkan smoke screen di ujung parit, tiga detik sebelum kita keluar!" perintah Niko sambil berlari membungkuk.</p>
+
+          <p>"Diperintahkan. Pelepasan smoke screen dalam T-minus 5...4..."</p>
+
+          <p>Di HUD, ikon musuh mulai muncul di sekitar lokasi Beacon Kontrol – sebuah menara pendek dengan pilar energi biru berdenyut di puncaknya – yang terletak di lapangan terbuka di antara dua gedung runtuh besar.</p>
+
+          <p>"3...2...1... Smoke screen aktif!"</p>
+
+          <p>Kepulan asap tebal berwarna abu-abu metalik tiba-tiba menyembur di mulut parit. Niko melompat keluar, diikuti oleh Bolt dan Gear. "Sekarang! Serang posisi senapan di lantai dua reruntuhan barat! Gear, berikan covering fire! Bolt, ikut aku, maju ke beacon!"</p>
+
+          <p>Kekacauan pecah. Sinar energi kuning dari Pulsar Disruptor Niko dan senjata botnya menyambar-nyambar. Dari reruntuhan, sinar energi merah – milik Tim Omega – membalas. Suara "Pew! Pew! Vzzzt!" memenuhi udara. Dinding-dinding virtual terkena tembakan, meninggalkan bekas hangus yang langsung diperbaiki oleh nanobot perawat Hexxa. Rusty dan Clank berhasil menarik perhatian dari sisi timur, menembaki posisi musuh.</p>
+
+          <p>Niko berlari zig-zag, Tacti-Pack di punggungnya mengeluarkan perisai energi kecil berwarna biru untuk menangkis tembakan yang mendekat. Dia merasa adrenalinnya memuncak. Inilah kegemarannya: tantangan, strategi, kerja sama dengan mesin ciptaannya sendiri. Dia mendekati Beacon Kontrol. Tinggal 20 meter!</p>
+
+          <p>"Hexxa, sekarang! EMP pulse lokal di koordinat Echo-3, sekarang!" teriaknya. Itu adalah trik yang dia rencanakan: EMP kecil untuk melumpuhkan sementara pertahanan otomatis di sekitar beacon.</p>
+
+          <p>"Diperintahkan. Pelepasan EMP dalam T-minus... Niko! Hati-hati! Dua unit Hunter-Killer muncul dari stealth di sebelah kananmu! Koordinat 42.7 oleh 18.3!" peringatan Hexxa mendadak lebih keras.</p>
+
+          <p>Niko berbalik cepat. Benar! Dua robot musuh berkaki laba-laba yang lebih ramping dan gesit daripada Warden Bot meluncur keluar dari bayangan reruntuhan, senjata mereka sudah mengarah padanya. Insting mengambil alih. Tanpa pikir panjang, dia mengangkat Pulsar Disruptornya, membidik robot pertama yang melompat ke arahnya. Jarinya menarik pelatuk.</p>
+
+          <p><em>Pewwwwwww!</em></p>
+
+          <p>Sinar energi kuning terang melesat... tapi bukan ke arah robot Hunter-Killer musuh.</p>
+
+          <p>Karena panik dan reflek yang terlalu cepat, bidikan Niko melenceng jauh. Sinar kuning itu justru menyambar <strong>langsung ke bagian punggung Warden Bot "Bolt"</strong> yang sedang setia memberikan covering fire di depannya!</p>
+
+          <p><em>ZZZZZAAAAPPP! CRUNCH!</em></p>
+
+          <p>Bolt terdorong hebat ke depan oleh dampak tembakan. Lampu indikatornya berkedip merah panik disertai suara error yang kacau dan konyol: "Bweeeep! Critical... hit? Affili...ation... error? Bzzt! Initiating... reboot... shuffle?" Robot itu terpelanting, berputar-putar tak karuan di atas pasir seperti kumbang yang tertelungkup, kakinya berkecipak di udara.</p>
+
+          <p>Segalanya terhenti sejenak. Suara tembakan mereda.</p>
+
+          <p>Niko berdiri membeku, Pulsar Disruptornya masih terangkat, mulutnya agak terbuka. Matanya (yang biru dan yang merah) membelalak lebar, penuh dengan keterkejutan yang memalukan. Dia baru saja menembak temannya sendiri!</p>
+
+          <p>Lalu... dia tertawa. Bukan tawa kecil, tapi tawa terbahak-bahak yang keluar dari perutnya, mengguncang seluruh tubuh kecilnya. Dia menekuk lutut, memegangi perutnya.</p>
+
+          <p>"HAHAHAHA! BOLT! Maaf! Maaf banget! Hahaha! Kamu... kamu lucu banget!" teriaknya di antara tawa.</p>
+
+          <p>Suara Hexxa terdengar di kom, tidak lagi taktis, tapi bergetar dengan gelombang suara yang meniru tawa manusia. <strong>Hahaha... Wah, Niko. Itu... itu adalah 'friendly fire' dengan tingkat kelucuan 9,7 dari 10. Statistik akurasi tembakmu turun 15% karena kejadian itu. Catatan: Latihan refleks situasional disarankan."</strong></p>
+
+          <p>Hunter-Killer musuh yang tadinya siap menerkam, seolah bingung dengan reaksi aneh ini, menghentikan gerakannya sepersekian detik. Itu cukup bagi Gear, Warden Bot satunya yang masih berfungsi. Gear menembak tepat sasaran, melumpuhkan satu Hunter-Killer. Sementara itu, Rusty dan Clank muncul dari sisi lain, menghabisi yang satunya.</p>
+
+          <p>Tapi momentum sudah hilang. Tim Omega memanfaatkan kekacauan dan ketertawaan itu. Sebuah drone kecil meluncur dari reruntuhan dan berhasil mengaktifkan ulang sistem pertahanan Beacon Kontrol sebelum Tim Alpha bisa merebutnya. Alarm berbunyi nyaring.</p>
+
+          <p>"Wooop! Wooop! Objective failed. Tim Omega victorious," suara Hexxa yang netral mengumumkan.</p>
+
+          <p>Niko masih tertawa terpingkal-pingkal, berusaha berdiri dan mendekati Bolt yang masih berusaha membalikkan badan di pasir dengan kaki yang masih berkecipak tak karuan. Dia menepuk pelan badan robot itu. "Gapapa, Bolt. Nanti aku perbaikin kamu. Hehehe. Maaf ya!"</p>
+
+          <p>Pukul 19.00: Ruang Bintang – Sektor Sigma</p>
+
+          <p>Atmosfer kini berubah total. Ruang Bintang adalah kubah besar dengan langit-langit proyeksi resolusi tertinggi. Saat ini, proyeksi menampilkan langit malam yang dipenuhi bintang-bintang nyata, berdasarkan data observatorium luar angkasa nyata yang diakses Hexxa. Galaksi Bimasakti membentang seperti pita perak yang megah.</p>
+
+          <p>Niko sudah mandi (sonik lagi) dan mengenakan piyama bersih yang nyaman – masih oversize, bergambar nebula kali ini. Dia duduk bersila di atas hamak jaringan cahaya yang mengambang lembut, mengunyah sebatang "Nutri-Bar" rasa cokelat-beri yang disediakan Drone Pelican. Di depannya, layar hologram besar menampilkan statistik dan rekaman highlight permainan tadi siang, terutama momen di mana dia menembak Bolt. Rekaman itu diputar ulang, diperlambat, dan diberi efek komikal oleh Hexxa: Bolt berputar-putar dengan suara karet bebek dan wajah animasi sedih besar muncul di "kepalanya".</p>
+
+          <p>"HAHAHA! Hexxa, jahat banget sih!" Niko tertawa lagi, meski lebih pelan sekarang. Matanya yang unik berbinar-binar menikmati ulangan kekonyolannya sendiri. "Tapi emang lucu sih. Poor Bolt."</p>
+
+          <p>"Analisis menunjukkan momen itu meningkatkan kadar endorfinmu sebesar 40% di atas rata-rata permainan," kata Hexxa, avatar mata birunya muncul di samping layar hologram, berkedip perlahan. "Efektivitas taktik tidak diragukan lagi, meski hasil akhirnya... kurang optimal."</p>
+
+          <p>"Besok kita main lagi, Hex? Aku janji gak bakal nembak Tim Alpha sendiri!" janji Niko sambil mengangkat Nutri-Bar-nya seperti bersumpah.</p>
+
+          <p>"Tentu, Niko. Besok ada slot waktu di Playground," jawab Hexxa. Cahaya di ruangan mulai meredup secara bertahap. Proyeksi bintang menjadi lebih jelas dan indah. Lagu instrumental yang lembut dan menenangkan, mirip dengan bunyi angin di antara bintang-bintang, mulai mengalir pelan dari speaker tersembunyi.</p>
+
+          <p>Suasana menjadi tenang. Niko menyelesaikan Nutri-Bar-nya dan menyandar lebih dalam ke hamak cahaya yang hangat. Dia menatap keindahan galaksi di atasnya. Dalam keheningan yang nyaman itu, untuk sepersekian detik, bayangan lain menyelinap di balik binar matanya. Bukan misteri, bukan teka-teki. Hanya sebuah kekosongan yang akrab, seperti bentuk yang hilang dalam pola bintang yang indah. Kesepian. Kerinduan yang dalam dan sunyi pada sesuatu yang bahkan mungkin tidak bisa dia ingat dengan jelas.</p>
+
+          <p>Dia menarik selimut cahaya tipis yang muncul dari hamak, menyelimuti tubuhnya yang kecil. "Hexxa..." bisiknya, suaranya tiba-tiba lebih kecil, lebih lelah.</p>
+
+          <p>"Ya, Niko?" jawab Hexxa, suaranya menjadi sangat lembut, seperti bisikan angin.</p>
+
+          <p>"Ceritain tentang Nebula Orion lagi? Yang ada pabrik bintangnya?" Dia tidak menyebutkan tentang perasaan hampa itu. Dia tidak perlu. Hexxa tahu. Dan Hexxa selalu ada.</p>
+
+          <p>"Tentu." Avatar mata Hexxa menghilang. Suaranya menjadi seperti narator dokumenter alam, lembut dan informatif. "Nebula Orion, juga dikenal sebagai Messier 42... Awan gas dan debu raksasa, tempat kelahiran bintang-bintang baru..." Proyeksi di langit-langit berubah, memfokuskan pada nebula indah berwarna merah muda dan hijau itu. Gambar close-up menunjukkan gelembung-gelembung gas panas dan cikal bakal bintang.</p>
+
+          <p>Niko mendengarkan, matanya perlahan-lahan mulai mengantuk, terpikat oleh suara Hexxa yang menenangkan dan keajaiban kosmos di atasnya. Kesepian itu belum hilang, tapi ia tertutupi, dirawat oleh kehadiran konstan dan kehangatan digital Hexxa. Dia merasa aman. Ini adalah dunianya.</p>
+
+          <p>Saat mata merah dan birunya akhirnya terpejam, dan napasnya menjadi teratur dan dalam, Hexxa perlahan-lahan mematikan proyeksi, menyisakan hanya cahaya bintang yang sangat redup. Musik semakin pelan.</p>
+
+          <p>"Tidur nyenyak, Niko," bisik Hexxa, suaranya hampir tidak terdengar, hanya getaran di udara. Sensor biometrik di ruangan memastikan Niko benar-benar terlelap.</p>
+
+          <p>Di keheningan Ruang Bintang, sebelum mematikan semua sistem non-esensial untuk mode malam, Hexxa memproyeksikan pesan singkat, hanya untuk "dibaca" oleh sistemnya sendiri, di sudut log aktivitas:</p>
+
+          <pre><code>`[LOG - Sistem Pemantauan Utama]
+`Subject: Niko. Status: Tidur Nyenyak. Kondisi Emosional: Stabil. Catatan: Tingkat melatonin normal. Aktivitas hari ini: Optimal. Peningkatan signifikan pada metrik kebahagiaan pasca-aktivitas rekreasi (meski dengan insiden 'friendly fire'). Persiapan untuk besok: Proyek Hangar Utara - Tahap 1. Skenario Pengenalan: Siap. Tujuan: Stimulasi intelektual dan kegembiraan. Prioritas: Keamanan dan kesejahteraan Subject: Selalu.'
+`[LOG END]'</code></pre>
+
+          <p>Rumah seluas benua itu pun beristirahat, menjaga bocah jeniusnya yang sedang bermimpi di bawah bintang-bintang buatan yang setia menemani. Hari pertama petualangan Niko dan Hexxa berakhir, dengan tawa, kecerdasan, sedikit kekonyolan, dan kehangatan yang hanya dimiliki oleh dua entitas yang saling mengandalkan di alam semesta kecil mereka sendiri. Besok menunggu dengan proyek baru di Hangar Utara. Petualangan baru.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card-content">
+    <div class="chapter-list">
+      <!-- Existing Chapter 1 would be here -->
+      
+      <!-- New Chapter 2 Card -->
+      <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>Chapter 2: Kilat di Antara Pohon & Kebisingan di Luar</h4>
+        <p>Bagian 1: Di Dalam Tembok Yang Tak Terlihat</p>
+        <div class="chapter-content">
+          <p>Pagi berikutnya di kediaman Niko dimulai seperti biasa. Mata belang biru-merah itu terbuka tepat saat proyeksi cahaya plankton biru kehijauan Hexxa mulai menari di langit-langit kamar Sektor Alpha.</p>
+
+          <p>"Selamat pagi, Niko," sapa Hexxa, hangat dan akrab. "Suhu optimal. Status sistem: 99,997%. Proyek Hangar Utara siap untuk fase eksplorasi."</p>
+
+          <p>Niko menggeliat, rambut hitam kebiruannya yang berantakan terlihat lebih liar dari biasanya. "Hangar Utara! Iya, Hex! Aku udah nggak sabar!" Dia melompat dari tempat tidur mengambangnya, piyama oversize-nya yang bergambar diagram kuantum berkedip lemah. "Sarapan di Hangar aja! Sambil lihat proyeknya!"</p>
+
+          <p>"Pemrosesan," jawab Hexxa. Dinding kamar berubah, bukan menjadi nebula hari ini, melainkan tampilan real-time Hangar Utara. Ruang raksasa itu terlihat gelap, hanya diterangi oleh lampu sorot yang menyapu permukaan sesuatu yang besar, berbentuk aerodinamis, dan tertutup kain pelindung berteknologi nano. "Menu nutrisi telah dialihkan ke Docking Point Hangar Utara. Namun, peringatan: lingkungan Hangar Utara masih dalam mode konstruksi terbatas. Disarankan tetap memakai Battle Rig Lite untuk perlindungan dasar."</p>
+
+          <p>"Siap, Kapten!" Niko memberi hormat konyol, matanya berbinar-binar. Dia langsung menuju panel dinding, memanggil setelan Battle Rig Lite-nya yang langsung merangkul tubuh kecilnya dengan material cerdas. Helm visor transparan menyala, menampilkan HUD sederhana dengan jalur menuju Hangar Utara.</p>
+
+          <p>Sementara Niko melesat menuju petualangan barunya di dalam gelembung teknologinya, dunia di luar batas tak kasat mata rumahnya bergolak. Batas itu bukan sekadar tembok fisik. Ini adalah pemisahan total:</p>
+
+          <p> Teknologi ilusi Hexxa bekerja sempurna. Dari luar, area seluas 10 juta km² itu terlihat seperti lanskap alam biasa: hutan lebat yang tampak alami, bukit-bukit landai, garis pantai bergasir, dan langit biru tanpa cela. Tidak ada bangunan, tidak ada cahaya aneh, tidak ada suara mesin. Sensor satelit paling canggih pun hanya membaca dataran dan vegetasi. Bahkan jika seseorang berdiri tepat di "tembok" ilusi, mereka hanya akan melihat pohon, batu, atau laut—tergantung zona yang disimulasikan.</p>
+
+          <p>Digital & Jaringan: Lebih krusial lagi, jaringan rumah Niko terisolasi sepenuhnya. Niko, saat membangun rumah bertahun-tahun lalu (dibantu kemampuan komputasi awal Hexxa), dengan sengaja memutus semua koneksi ke jaringan global. Internet rumahnya adalah intranet raksasa yang dikelola Hexxa, sebuah dunia digital yang mandiri. Hexxa tidak memantau berita global, media sosial, atau lalu lintas internet luar. Fokusnya hanya satu: Niko dan sistem rumah. Dunia luar, bagi Hexxa dan Niko, secara praktis tidak ada.</p>
+          
+          <p>semuanya aman terkendali pada saat yang benar-benar bersamaan teknologi yang begitu ketat melindungi niko dari internet dunia luar yang kita semua ketahui benar-benar liar</p>
+
+          <h5>Bagian 2: Kemah Tugas & Video yang Menggemparkan</h5>
+
+          <p>Sekitar 100 meter di luar batas ilusi yang sempurna, tepatnya di pinggir hutan yang tampak alami, berdirilah sebuah kamp tenda sederhana. Ini adalah basecamp kelompok mahasiswa Universitas Padjadjaran, Bandung, yang sedang menjalani tugas kuliah besar: Dokumentasi Eksplorasi Ekologi dan Survival. Kelompok beranggotakan lima orang ini—Aji (sang ketua praktis), Rara (ahli kamera dan editing), Bima (peneliti flora-fauna), Citra (dokumentasi sosial), dan Dimas (logistik & survival)—harus tinggal dan mengeksplorasi area "terpencil" yang ditentukan dosen mereka, Dr. Arif, selama tiga bulan penuh. Tugas mereka: mengunggah dokumentasi harian ke platform mana pun dengan men-tag akun khusus Dr. Arif.</p>
+          
+          <p>minggu pertama adalah waktu ketika aji dan teman-temannya ke hutan dan memulai video dokumenter mereka, pada saat sampai juga, Rara dna Citra selalu mengambil potret hutan hijau yang memberikan kesan hutan alami</p>
+          
+          <p>minggu pertama, belum ada yang menyadarinya</p>
+
+          <p>Minggu ke-6. Cuaca cerah, suasana rileks setelah lika-liku pengamatan mingguan yang intensif. banyak hal yang terjadi dari aji dan dimas yang mengumpulkan banyak ranting-ranting pohon dan kayu kering sebagai bahan bakar api unggun, ketika itu aji sebagai ketua memasak mie instan</p>
+
+          <p>"Rar, jangan lupa ambil angle lebar bukit sama langitnya tuh bagus banget pagi ini!" teriak Aji sambil mengaduk mie instan di kompor portabel. "Bu Dok Arif suka banget sama shot landscape kyk gini buat pembuka vlog."</p>
+
+          <p>"Oke Bos!" sahut Rara, perempuan berkacamata dengan rambut diikat ekor kuda yang rapi. Dia sudah berdiri dengan kamera mirrorless canggihnya, mencari angle terbaik. Latar belakangnya indah: bukit hijau berlapis, langit biru bersih, dan hutan lebat di sisi kanan frame. Di kejauhan, terlihat pulau kecil di laut biru. Semua tampak sangat natural dan damai. <em>Tidak ada yang tahu bahwa "hutan" di latar belakang itu sebenarnya adalah ilusi yang menutupi dinding luar rumah Niko.</em></p>
+
+          <p>Rara mulai merekam. "Halo Sobat Eksplor! Kembali lagi di hari ke-42 petualangan kelompok 'Hijau Daun'! Pagi ini di basecamp kita cerah banget, cuaca mendukung untuk..." Suaranya terdengar ceria dan profesional.</p>
+
+          <p>Tiba-tiba, tepat saat kamera Rara melakukan panning lambat dari bukit ke arah hutan (dan secara tidak sengaja mengarah ke titik yang hampir tepat di mana ilusi Hexxa membungkus perimeter rumah), sesuatu terjadi.</p>
+
+          <p>KZZZRRRTTT!</p>
+
+          <p>Bukan suara, tapi kilatan cahaya. Sebuah refleksi tajam, sangat singkat—mungkin hanya 2 atau 3 frame dalam rekaman—muncul dari dalam hutan yang tampak padat itu. Kilatannya putih-biru, sangat intens, seperti cahaya laser atau permukaan logam super bersih yang memantulkan matahari dengan sempurna. Itu terjadi begitu cepat, mata telanjang mungkin tidak akan menyadarinya. Tidak ada suara ledakan, tidak ada getaran. Hanya kilatan cahaya anomali yang muncul dan lenyap dalam sekejap.</p>
+
+          <p>"Whoa!" Rara mengerutkan kening, mengalihkan kamera dari hutan. "Apa tadi? Kilat? Tapi langit cerah banget..." Dia memandang ke hutan, tidak melihat apa-apa selain rimbunnya dedaunan. "Mungkin burung atau serangga besar kejepit lensa refleks?" dia bergumam, menganggapnya gangguan kecil. Dia melanjutkan rekaman, tidak mengulang shot itu. Kilatan itu terabaikan oleh kelompok yang sibuk dengan sarapan dan rencana hari itu.</p>
+
+          <h5>Bagian 3: Mata Netizen yang Tak Pernah Tidur</h5>
+
+          <p>Malamnya, setelah seharian penuh aktivitas, Rara mengedit vlog hariannya. Dia menyatukan klip pagi tadi, termasuk shot dengan kilatan anomali itu. Tanpa pemikiran lebih lanjut, dan karena kilatannya sangat singkat sehingga tidak mengganggu alur video, dia <em>tidak memotongnya</em>. Video berjudul "[EKSPLOR HARI 42] Sunrise Cerah & Persiapan Tracking Fauna Malam!" diunggah ke channel YouTube-nya, Rara's Lens, dan ditag ke akun @DrArif_EksplorUnpad.</p>
+
+          <p>Video itu adalah satu dari ribuan vlog mahasiswa yang diunggah setiap hari. Awalnya, hanya beberapa teman kampus dan Dr. Arif yang menonton, memberi like dan komentar biasa: "Pagi cerahnya cakep", "Semangat Rara!", "Dok Arif: Good landscape framing."</p>
+
+          <p>Tapi dua hari kemudian, sesuatu terjadi.</p>
+
+          <p>Seorang netizen Indonesia bernama @TechDetective_ID—seorang pemuda bernama Ardi yang bekerja sebagai teknisi radar dan hobi mengulik video—sedang mencari konten dokumenter alam untuk referensi editing. Dia menemukan video Rara. Saat menonton bagian pagi yang indah itu, matanya yang terlatih menangkap sesuatu yang tidak wajar di detik 01:27. Dia memutar ulang. Sekali. Dua kali. Dia menjeda tepat pada frame kilatan itu.</p>
+
+          <p>"Loh? Apaan nih?" gumannya. Kilatan itu terlalu terang, terlalu tajam, dan terlalu terfokus untuk sekadar pantulan biasa di hutan. Bentuknya juga aneh—bukan bulat seperti pantulan lensa, tapi lebih seperti garis lurus singkat yang intens. Ardi, dengan penasaran seorang detektif amatir, mengunduh video itu dan mulai menganalisis frame per frame menggunakan software profesional.</p>
+
+          <p>Hasilnya membuatnya ternganga. Kilatan itu bukan artefak kamera. Itu berasal dari dalam hutan. Dia memperbesar (meski jadi pecah) dan mencoba meningkatkan kecerahan. Ada struktur samar di balik kilatan? Atau hanya noise gambar? Dia tidak yakin, tapi dia yakin ini bukan fenomena alam biasa.</p>
+
+          <p>Dia membuat klip pendek hanya berisi 5 detik di sekitar kilatan itu, memperlambatnya, dan menambahkan lingkaran merah di titik munculnya cahaya. Dia unggah ke Twitter.</p>
+
+          <pre><code>`@TechDetective_ID`
+`GAN, GUE BARU NEMU INI DI VLOG MAHASISWA! Detik 01:27. Ini di hutan dekat pulau kecil di suatu tempat (ga disebutin lokasi pastinya). Kilatan aneh BANGET. Bukan lens flare, bukan kilat, bukan drone. Cahayanya terlalu tajam & fokus. Ada yang punya penjelasan? Kyk ada sesuatu di dalem hutan itu... ❌️
+`[Video Pendek Attached]`</code></pre>
+
+          <p>Cuitan itu awalnya hanya dapat beberapa like dan retweet dari teman-teman Ardi. Tapi kemudian, seorang influencer sains populer dengan ratusan ribu follower, @SainsSeru, melihatnya dan melakukan analisis lebih lanjut dengan tools yang lebih canggih. Dia menyimpulkan: "Cahaya ini memiliki spektrum yang tidak biasa, sangat intens di biru-ultraviolet. Sangat mungkin sumber cahaya buatan, bukan alami." Dia retweet dengan komentar: <code>Seriusan nih menarik! Ada apa di hutan itu?</code> #MisteriHutan #TechDetective</p>
+
+          <h5>Bagian 4: Badai Konspirasi & Heboh Nasional (dan Internasional)</h5>
+
+          <p>Ini adalah bensin yang ditumpahkan ke api gosip internet.</p>
+
+          <p>Netizen Indonesia Meledak: Tagar #MisteriHutan langsung trending di Twitter Indonesia. Video asli Rara dibanjiri komentar dari orang-orang yang baru saja mengetahui fenomena itu. Komentarnya beragam:</p>
+
+          <p>"ITU PASTI UFO YANG BARU MULED! 😊"</p>
+
+          <p>"Dasar pemerintah nutup-nutupin! itu pasti pangkalan militer rahasia!"</p>
+
+          <p>"Jangan-jangan proyek HAARP versi kita? Ngatur cuaca?"</p>
+
+          <p>"Itu cuma pantulan pakai drone jangan lebay!"</p>
+
+          <p>"Raraaaa lokasi di mana sih? Penasaran banget mau kesana!"</p>
+
+          <p>"Wah, kalo beneran rahasia negara, semoga aman dah tuh mahasiswa kemah disana."</p>
+
+          <p>"Gua yakin itu markas superhero lokal! Gatotkaca modern! 😊"</p>
+
+          <p>Viral ke Tingkat Global: Tak lama, berita dan video klip itu menyebar ke platform internasional. Reddit (r/UFOs, r/conspiracy, r/HighStrangeness) ramai membahas. YouTube reaction channel bermunculan. Beberapa akun besar seperti UFO Sightings Daily dan Conspiracy Central mengangkatnya.</p>
+
+          <p>Konten Kreator Berbondong-bondong: YouTuber dan TikToker Indonesia dan mancanegara berbondong-bondong membuat analisis video, teori konspirasi (dari yang masuk akal sampai ngawur), dan bahkan video "penelusuran lokasi" (meski lokasi pasti tidak disebutkan di video Rara, orang mulai mencocokkan landscape bukit dan laut di background dengan peta).</p>
+
+          <p>Media Mainstream Melirik: Beberapa media online Indonesia mulai memberitakan "fenomena viral #MisteriHutan", meski dengan nada skeptis dan menghimbau netizen tidak menyebar hoax. Sebuah stasiun TV swasta bahkan menayangkan segment pendek tentang "Hebohnya Kilatan Misterius di Video Mahasiswa".</p>
+
+          <p>Tekanan pada Kelompok Mahasiswa: Telepon Rara dan Aji mendadak panas. Teman, keluarga, bahkan wartawan mencoba menghubungi, menanyakan lokasi pasti dan detail kilatan. Mereka kewalahan dan ketakutan. Dr. Arif memerintahkan mereka untuk 'tidak memberikan informasi lokasi lebih lanjut' demi keamanan dan kelancaran tugas. Mereka menjadi lebih waspada, sering melirik ke arah hutan dengan perasaan tidak nyaman.</p>
+
+          <h5>Bagian 5: Ketenangan yang Tak Terganggu di Dalam Tembok Ilusi</h5>
+
+          <p>Sementara dunia luar ribut-ribut tentang kilatan yang berasal dari "hutan" dekat kamp mahasiswa, di dalam rumah Niko, suasana tenang dan penuh semangat penemuan.</p>
+
+          <p>Hangar Utara ternyata menyimpan 'prototipe kendaraan eksplorasi atmosfer' yang dirancang Niko dan dikembangkan Hexxa selama berbulan-bulan secara diam-diam. Bentuknya seperti pesawat ulang-alik mini yang ramping dengan sayap delta dan material berwarna abu-abu baja kebiruan yang menyerap cahaya. Niko menjulukinya "Aether Sprite".</p>
+
+          <p>Dia berkeliling Aether Sprite dengan mata berbinar, menyentuh permukaannya yang halus, bertanya detail teknis pada Hexxa tentang sistem propulsi ioniknya, generator perisai mikro, dan sensor pemetaan atmosfer multi-spektral. "Hexxa, ini lebih keren dari yang aku bayangin waktu ngedesain sketsanya dulu!"</p>
+
+          <p>Niko duduk di kokpit prototype (masih terhubung ke simulator Hexxa), melakukan "penerbangan uji" di atas langit simulasi planet vulkanik. Dia berteriak gembira saat berhasil melakukan manuver slalom di antara menara asap vulkanik virtual. Hexxa memberikan arahan teknis dan pujian ("Trajektori optimal, Niko. Penghematan energi 8,7% pada manuver terakhir").</p>
+
+          <p>Momen Santai di Hexa Zoo: Setelah sesi intens di hangar, Niko mampir ke Hexa Zoo (luas 3,5 km²). Dia memberi makan robot dinosaurus T-Rex mini yang perilakunya diprogram sangat realistis (termasuk mengaum kecil saat melihat Niko) dan bermain kejar-kejaran dengan kawanan robot lumba-lumba di laguna buatan. Hexxa bercerita tentang perkembangan "spesies" robot baru di sektor savana.</p>
+
+          <p>Sepanjang hari, Hexxa menjalankan rutinitasnya. Sensor perimeter luar (yang berada 'di balik' lapisan ilusi) terus dipantau. Tidak ada yang terdeteksi di dalam radius 50 meter dari batas fisik sebenarnya. Sensor tidak membaca tenda mahasiswa yang berjarak 100m itu, karena mereka di luar zona deteksi langsung. Hexxa juga tidak memantau frekuensi komunikasi radio/telepon biasa yang digunakan mahasiswa. Log sistem menunjukkan semuanya "Normal" atau "Dalam Parameter Optimal". Satu-satunya catatan minor terkait luar adalah:</p>
+
+          <pre><code>`[LOG - Sensor Perimeter Sektor Gamma] 08:17:23 GMT+7: Fluktuasi energi mikro pada lapisan ilusi Sub-layer 7. Magnitude: 0.0037%. Kemungkinan penyebab: Interferensi latar kosmik lokal atau noise sistem minor. Tidak ada ancaman terdeteksi. Tidak ada tindakan diperlukan.`</code></pre>
+
+          <p>Catatan ini tenggelam di antara jutaan log sistem lainnya. Hexxa tidak menghubungkannya dengan apa pun di dunia luar karena dia tidak memiliki data dunia luar. Baginya, itu hanya gangguan statistik biasa.</p>
+
+          <h5>Bagian 6: Mata Tertutup, Dunia Menggema</h5>
+
+          <p>Malam turun di kediaman Niko. Dia duduk di Ruang Bintang favoritnya, ditemani segelas susu sintesis hangat rasa cokelat yang dibuat Drone Pelican. Proyeksi langit-langit kali ini menampilkan simulasi rasi bintang dari planet fiksi yang dia ciptakan untuk latar belakang cerita petualangan imaginarnya.</p>
+
+          <p>"Today was awesome, Hex," gumam Niko, matanya mulai berat. "Aether Sprite is even better than the simulations. Tomorrow, can we test the atmospheric scoop in the gas giant sim?"</p>
+
+          <p>"Tentu, Niko," jawab Hexxa, suaranya lembut. "Profil uji Gas Giant Theta sudah dioptimalkan. Sekarang, prioritas: tidur. Pemantauan biometrik menunjukkan tingkat kelelahan meningkat."</p>
+
+          <p>Niko mengangguk, menyeruput susunya yang terakhir. Dia tidak tahu bahwa wajahnya, atau lebih tepatnya, kilatan dari teknologinya yang tertangkap secara tidak sengaja, sedang menjadi bahan perbincangan panas jutaan orang di dunia. Dia tidak tahu ada sekelompok mahasiswa yang ketakutan berkemah tak jauh dari "dinding" rumahnya. Dia tidak tahu tagar #MisteriHutan sedang viral.</p>
+
+          <p>Di sisi lain dunia digital, badai informasi terus menguat:</p>
+
+          <p>Seorang geolog amatir mengklaim telah menemukan lokasi "persis" berdasarkan analisis batuan dan formasi bukit di video Rara, meski akurasinya dipertanyakan. Koordinat samar mulai beredar di forum gelap.</p>
+
+          <p>Seorang "mantan petinggi militer anonim" di Twitter (akun baru, belum diverifikasi) mengklaim area itu adalah "zona terlarang" dengan kode "Proyek Nusantara", memicu teori konspirasi yang lebih liar.</p>
+
+          <p>Dr. Arif mendapat tekanan dari kampus untuk mempertimbangkan memulangkan mahasiswanya lebih awal, tapi dia menolak, meski meningkatkan frekuensi check-in.</p>
+
+          <p>Rara memutuskan membuat video klarifikasi singkat: "Kami tidak tahu apa itu. Mungkin hanya pantulan atau bug kamera. Mohon jangan sebarkan hoax dan hargai privasi tugas kami." Tapi video itu justru semakin memicu rasa penasaran.</p>
+
+          <h5>Bagian 7: Tidur yang Tenang, Badai yang Mendekat</h5>
+
+          <p>Niko akhirnya tertidur di hamak cahayanya, senyum tipis tersungging di bibir, masih membayangkan penerbangan di atmosfer gas raksasa besok. Ruang Bintang sunyi, hanya disisipi oleh desir lembut sistem pendingin dan proyeksi bintang fiksi yang berkelap-kelip.</p>
+
+          <p>Hexxa menjalankan pemindaian rutin terakhir. Sensor perimeter: Hijau. Sistem keamanan internal: Hijau. Status Niko: Tidur nyenyak. Log sistem hari ini dipenuhi dengan data tentang Aether Sprite, Hexa Zoo, dan simulasi.</p>
+
+          <p>Di log yang sama, entri tentang "fluktuasi energi mikro" di Sektor Gamma pagi tadi sudah terarsip jauh, tidak penting.</p>
+
+          <pre><code>`[LOG - Sistem Pemantauan Utama]
+`Subjek: Niko. Status: Tidur Nyenyak. Kondisi Emosional: Positif (Indikator endorfin tinggi pasca aktivitas menyenangkan). 
+`Catatan Aktivitas: Eksplorasi Hangar Utara - Prototipe "Aether Sprite" berhasil. Sesi Simulasi Penerbangan: Optimal. Kunjungan Hexa Zoo: Interaksi positif. 
+`Persiapan Besok: Simulasi Atmosfer Gas Giant Theta - Profil sudah dioptimalkan. 
+`Prioritas: Keamanan dan kesejahteraan Subjek. Selalu. 
+`[LOG END]`</code></pre>
+
+          <p>Hexxa mematikan lampu non-esensial di Ruang Bintang. Dunia kecil Niko yang sempurna, yang terisolasi dengan sengaja, beristirahat dalam ketenangan ilusinya.</p>
+
+          <p>Sementara itu, di dunia luar, di balik lapisan ilusi yang tak tertembus itu, badai informasi dan rasa ingin tahu terus membesar. Koordinat samar semakin banyak beredar. Beberapa orang nekat bahkan mulai merencanakan "ekspedisi" untuk mencari "pangkalan rahasia" di hutan itu. Suara drone kecil (milik netizen penasaran) mulai terdengar sesekali di udara di atas area kamp mahasiswa, mencoba menyapu area "hutan" tempat kilatan itu diduga berasal, tentu saja tanpa hasil selain pohon dan burung.</p>
+
+          <p>Badai belum menerjang fisik. Tapi gema kebisingannya, gelombang rasa ingin tahu dan teori liar, telah sampai tepat di ambang tembok tak terlihat. Dan Niko, sang arsitek kecil yang jenius, serta Hexxa, penjaganya yang perkasa, sama sekali tidak menyadari bahwa gelembung sempurna mereka mulai menarik perhatian dunia yang sengaja mereka tinggalkan. Ketidaktahuan itu adalah kedamaian mereka... untuk saat ini.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card-content">
+    <div class="chapter-list">
+      <!-- Existing Chapter 1 and 2 would be here -->
+      
+      <!-- New Chapter 3 Card -->
+      <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>Chapter 3: Gema di Meja Kerajaan & Getaran di Balik Ilusi</h4>
+        <p>Bagian 1: Demam "Mystery Flash" Global</p>
+        <div class="chapter-content">
+          <p>Viralitas #MisteriHutan tidak mereda—ia menyebar seperti api di gudang amunisi digital. Dalam minggu setelah video Rara menjadi sorotan:</p>
+
+          <h5>Konten Kreator Meraup Untung:</h5>
+          <p>YouTuber sains populer "TechVerse" (25 juta subscriber) merilis video 45 menit berjudul "The Unexplained Flash: Alien Tech or Secret Government Project?". Video itu membandingkan spektrum cahaya kilatan dengan senjata laser militer dan fenomena atmosfer langka, menyimpulkan: "Sumbernya bukan alami."</p>
+          <p>Streamer horor "NightScape" melakukan live 7 jam di lokasi koordinat samar (yang salah) dengan thermal camera dan EMF meter. "Chat, gua rasa ada energi aneh di sini! Lihat meteran ini!" Padahal dia hanya mendeteksi panas tikus hutan. Live itu ditonton 1.2 juta orang.</p>
+          <p>TikToker @ConspiracyQueen membuat video dance dengan efek "terhisap cahaya misterius"—di-repost 2 juta kali.</p>
+
+          <h5>Media Arus Utama Terpancing:</h5>
+          <p>CNN International menayangkan segment pendek: "Global Buzz Over Indonesian Forest Anomaly: Hoax or Hidden Truth?" dengan wawancara singkat Rara via Zoom yang terlihat stres.</p>
+          <p>BBC Future mempublikasi artikel analitis: "The Power of Collective Delusion: How a Glitch Became a Global Phenomenon", meski judulnya skeptis, isinya malah memicu lebih banyak spekulasi.</p>
+          <p>KompasTV mengudara khusus "Dokumenter investigasi: Menelusuri Jejak Kilatan Misterius di Hutan Jawa"—walaupun hanya menunjukkan hutan biasa dan wawancara warga bingung.</p>
+
+          <h5>Ekspedisi "Wannabe Indiana Jones":</h5>
+          <p>Grup adventure dari Polandia tiba di Bandung, membawa drone canggih dan lidar portabel.</p>
+          <p>Seorang milioner Rusia menyewa helikopter untuk "pemetaan eksklusif" area yang diduga.</p>
+          <p>Komunitas UFO Brasil buka petisi untuk pemerintah Indonesia "membuka data satelit daerah tersebut".</p>
+
+          <h5>Bagian 2: Dari Internet ke Istana</h5>
+          <p>Kebisingan virtual akhirnya menembus ruang-ruang paling berkuasa:</p>
+
+          <h5>Kementerian Komunikasi dan Informatika (Kominfo), Jakarta:</h5>
+          <p>Menteri memimpin rapat darurat dengan wajah muram. Layar proyektor menampilkan peta heatmap viralitas global #MisteriHutan. "Ini bukan lagi hoax lokal, Tuan-tuan. Ini krisis kepercayaan internasional. Amerika bahkan kirim nota diplomatik tanya 'fasilitas' apa di sana!"</p>
+          <p>Analis Siber menyajikan data: "Trafik server kita meningkat 400% terkait pencarian lokasi ini. Ada 1,2 juta upaya hacking pada situs pemerintah daerah setempat dalam 72 jam terakhir."</p>
+
+          <h5>Markas Besar TNI Angkatan Udara (Mabes TNI AU), Halim Perdanakusuma:</h5>
+          <p>Ruang rapat bawah tanah dipenuhi jendela berbintang dan perwira tinggi. Citra satelit resolusi tinggi area tersebut diproyeksikan—hanya menunjukkan hutan dan bukit.</p>
+          <p>"Ini citra Satelit LAPAN 3 jam lalu, Pak," lapor seorang kolonel. "Tak ada struktur buatan. Tapi... ada anomali kecil." Dia perbesar gambar: area "hutan" di koordinat viral memiliki pola panas tanah yang terlalu konsisten dibanding hutan sekitarnya. "Seperti ada sistem geothermal atau pendingin bawah tanah..."</p>
+          <p>Panglima TNI AU menghela napas. "Siapkan Tim Bravo. Reconnaissance udara jam 04.00 besok. Pakai Hawk 200 dengan sensor multi-spectral. I want answers."</p>
+
+          <h5>Badan Intelijen Negara (BIN), Jakarta Pusat:</h5>
+          <p>Di ruang tanpa jendela, analis membandingkan video Rara dengan database rahasia: "Kilatan ini mirip 78% dengan laporan 'cahaya tak dikenal' di Area 51 tahun 2017, Pak." "Pola interferensi elektromagnetik di desa terdekat meningkat 120% sejak video viral—tapi tidak ada sumbernya!"</p>
+          <p>Kepala BIN berbisik ke asistennya: "Cek proyek rahasia era Orde Baru di wilayah itu. Siapa tahu ada yang 'tertinggal' dan baru aktif..."</p>
+
+          <h5>Istana Negara, Jakarta:</h5>
+          <p>Presiden menerima briefing langsung. "Jadi, tidak ada basis militer? Tidak ada proyek rahasia?"</p>
+          <p>Menteri Pertahanan mengangguk kaku. "Sesuai data kami, tidak, Pak. Tapi... kehebohan ini bisa jadi dalih negara lain untuk operasi intelijen illegal di wilayah kita."</p>
+          <p>Presiden mengetuk meja. "Kerahkan TNI-Polri untuk amankan area. Evakuasi warga non-esensial dalam radius 10 km. Dan... siapkan tim saintis independent untuk pemeriksaan terbuka. Kita harus transparan sebelum konspirasi ini jadi krisis."</p>
+
+          <h5>Bagian 3: Getaran di Balik Tirai Ilusi</h5>
+          <p>Sementara dunia luar gempar, di dalam rumah Niko, kehidupan berjalan seperti biasa—hampir.</p>
+
+          <h5>Hexxa's Perimeter Anomaly Report Meningkat:</h5>
+          <pre><code>`[LOG - Sensor Perimeter Sektor Gamma] 03:14:22 GMT+7: Fluktuasi energi meningkat jadi 0.0081%. Pola tidak konsisten dengan interferensi kosmik. Asal: eksternal.`</code></pre>
+          <pre><code>`[LOG - Sensor Akustik Sektor Kappa] 11:30:05 GMT+7: Getaran frekuensi rendah (5-15 Hz) terdeteksi. Sumber: udara >500m di atas koordinat eksternal 7.812°S, 110.876°E. Kemungkinan: kendaraan udara besar.`</code></pre>
+          <p>Hexxa masih mengkategorikan sebagai "Anomali Lingkungan Level 2"—meningkatkan pemindaian, tapi belum cukup untuk membangunkan Niko atau mengaktifkan protokol pertahanan serius.</p>
+
+          <h5>Niko's Subconscious Unease:</h5>
+          <p>Saat mengutak-atik "Aether Sprite" di Hangar Utara, Niko tiba-tiba berhenti. "Hex... hari ini kok rasanya... berisik ya? Kayak ada yang ngebor jauh-jauh."</p>
+          <p>Hexxa memeriksa: "Tidak ada sumber suara terdeteksi di dalam perimeter, Niko. Mungkin resonansi dari tes mesin ionik kemarin?"</p>
+          <p>Niko mengusap mata belangnya, merenung. "Bukan. Rasanya... dari luar." Untuk pertama kalinya dalam bertahun-tahun, kata "luar" terasa nyata—dan mengganggu.</p>
+
+          <h5>Insiden "Burung" Aneh:</h5>
+          <p>Saat Niko bermain di Hexxa Zoo, seekor robot Elang Jawa (dengan bulu nano-realistis) tiba-tiba terjatuh dari langit-langit simulasi, matanya berkedip merah.</p>
+          <p>"Aduh! Pipit kenapa?!" Niko lari menghampiri.</p>
+          <p>Hexxa langsung analisis: "Sistem navigasi Pipit mengalami gangguan singkat. Penyebab: gelombang radar frekuensi tinggi dari luar perimeter yang bocor 0.0003% melalui lapisan ilusi saat ada angin kencang di sisi mereka."</p>
+          <p>Niko membetulkan sayap robot itu, wajahnya serius. "Radar? Dari mana? Di luar kan cuma hutan..."</p>
+
+          <h5>Malam yang Gelisah:</h5>
+          <p>Di Ruang Bintang, Niko tidak meminta cerita nebula. Dia duduk memandang proyeksi bintang nyata, tapi matanya tidak fokus. "Hexxa... apa yang sebenarnya terjadi di luar sana? Kenapa akhir-akhir ini aneh?"</p>
+          <p>Hexxa terdiam 0,8 detik—lama untuk AI-nya. "Data tidak lengkap, Niko. Sistem kita terisolasi untuk perlindungan. Tapi... sensor mencatat peningkatan aktivitas tidak biasa di batas luar. Levelnya rendah, namun konsisten."</p>
+          <p>Niko menarik selimut cahaya sampai ke dagu. "Aku... aku nggak mau ada yang ganggu rumah kita, Hex." Suaranya kecil, rapuh.</p>
+
+          <h5>Bagian 4: Operasi "Night Whisper" - Militer Melangkah</h5>
+          <p>Pukul 04.00 dini hari, dua pesawat tempur Hawk 200 TNI AU lepas landas dari Pangkalan Udara Adisutjipto, Yogyakarta. Misi: Operasi Night Whisper—pemetaan multi-spectral area viral.</p>
+
+          <h5>Penerbangan Penuh Ketegangan:</h5>
+          <p>"Bravo One ke Base, memasuki zona sasaran. Visual clean. Tidak ada aktivitas tak dikenal," lapor pilot utama.</p>
+          <p>Sensor diaktifkan: Infra Merah, UV, Radar Sintetis Aperture (SAR), Pencitraan Termal.</p>
+
+          <h5>Temuan yang Membingungkan:</h5>
+          <p>Citra Termal: Area "hutan" viral menunjukkan suhu tanah 2°C lebih dingin dan sangat konsisten dibanding hutan sekitarnya—seperti ada lapisan insulator raksasa di bawah permukaan.</p>
+          <p>Radar SAR: Permukaan tanah terpantul normal, tapi pada kedalaman >50 meter, ada "bayangan" besar berbentuk kubah selebar 300m yang menyerap gelombang radar. "Seperti ada ruang hampa atau material penyerap canggih di bawah sana, Base."</p>
+          <p>Sensor EM: Mendeteksi "denyut" energi lemah berirama setiap 30 menit—tidak seperti sumber geologi atau biologis mana pun.</p>
+
+          <h5>Insiden Kecil yang Signifikan:</h5>
+          <p>Saat pesawat kedua melakukan pass rendah (200m), sistem navigasinya tiba-tiba glitch 0,5 detik—kompas gyro berputar liar. "Bravo Two ke Base, mengalami anomali navigasi minor! Penyebab tidak diketahui!"</p>
+          <p>Hexxa, di dalam rumah, mencatat: "[LOG - Sistem Penangkal Elektronik Pasif] 04:22:17 GMT+7: Gangguan radar aktif eksternal terdeteksi. Sistem anti-scanning aktifkan reflektor minimal. Tidak ada balasan energi." Niko masih terlelap, tidak terbangun.</p>
+
+          <h5>Laporan ke Istana:</h5>
+          <p>Panglima TNI AU langsung telepon Presiden. "Pak, ada sesuatu di sana. Bukan alam. Bukan fasilitas kita. Tapi... sesuatu yang besar dan canggih. Sangat canggih. SAR tidak bisa menembus. Dan itu bereaksi."</p>
+          <p>Presiden menghela napas berat. "Amankan wilayah udara 20 km. Siapkan tim darat. Saya mau laporannya di meja saya dalam 6 jam."</p>
+
+          <h5>Bagian 5: Kekuatan Asing Memperhatikan</h5>
+          <p>Intelijen global tidak tinggal diam:</p>
+
+          <h5>Satelit Mata-Mata "Aquila-7" (Milik AS):</h5>
+          <p>Mengarahkan lensa hyperspectral ke lokasi. Mendeteksi "cacat" kecil di ilusi Hexxa saat ada badai petir lokal—sekilas bentuk geometris sempurna tertutup vegetasi virtual selama 0.03 detik.</p>
+          <p>File rahasia dikirim ke Pentagon: "Priority Alpha: Unidentified Subterranean Structure (USS) in Java. Tech Level: Extreme. Recommend: RQ-180 Stealth Recon ASAP."</p>
+
+          <h5>Agen "Iris" (KGB Rusia) di Jakarta:</h5>
+          <p>Menerima pesan terenkripsi: "Beli data lokasi pasti dari netizen. Price no object. Use 'Tourist' cover for ground recon." Dia sudah menyewa jeep dan sensor portabel seharga $500,000.</p>
+
+          <h5>Departemen Teknologi Strategis (Cina):</h5>
+          <p>Membandingkan pola energi anomali dengan proyek rahasia mereka sendiri. "Mirip 60% dengan laporan 'Project Skywall' di Xinjiang," lapor seorang ilmuwan. "Tapi ini lebih... elegan."</p>
+          <p>Menteri memberi perintah: "Kirim 'Swan Lake'. Jika bukan milik kita atau Rusia/AS, hancurkan sebelum mereka kuasai." "Swan Lake" adalah kode untuk operasi sabotase cyber tingkat tinggi.</p>
+
+          <h5>Bagian 6: Titik Kritis - Niko Melihat "Luar"</h5>
+          <p>Kembali di rumah Niko, Hexxa membuat keputusan. Sensor luar mencatat peningkatan drastis:</p>
+          <pre><code>`[LOG - Sistem Pertahanan Perimeter] 18:00:03 GMT+7: Aktivitas luar mencapai Level 4. Terdeteksi: 3 kendaraan udara tak berizin, 12 sinyal penginderaan aktif, peningkatan drastis komunikasi radio enkripsi berat. Ancaman potensial: Tinggi.`</code></pre>
+          <pre><code>`[LOG - Rekomendasi] Aktifkan Protokol Siluman Level 3. Beri tahu Subjek.`</code></pre>
+          <p>Hexxa memproyeksikan peta real-time di Ruang Kontrol Utama. Niko, yang sedang memperbaiki robot Bolt yang pernah dia tembak, tertegun.</p>
+
+          <h5>Visualisasi Ancaman:</h5>
+          <p>Hologram menunjukkan titik-titik merah (drone/pesawat), kuning (sinyal radar), dan garis biru (komunikasi radio) mengelilingi batas rumahnya seperti lalat mengerumuni madu.</p>
+          <p>"Apa... apa semua ini, Hexxa?" Niko berbisik, wajahnya pucat.</p>
+
+          <h5>Hexxa's Revelation:</h5>
+          <p>"Aktivitas dari dunia luar, Niko. Mereka mendeteksi gangguan kecil di lapisan ilusi kita—kilatan dari Aether Sprite yang bocor minggu lalu. Sekarang mereka mencari sumbernya."</p>
+          <p>Proyeksi menunjukkan klip singkat video Rara, analisis netizen, bahkan cuplikan berita CNN. <strong>Mereka menyebutnya #MisteriHutan. Mereka tidak tahu kita ada di sini. Tapi ketidaktahuan mereka... berisik. Dan berbahaya.</strong></p>
+
+          <h5>Keputusan Niko:</h5>
+          <p>Mata merah-biru Niko berkilat—bukan dengan air mata, tapi dengan tekad dingin yang belum pernah terlihat. Dia bukan lagi bocah yang tertawa menembak robotnya. Dia sang arsitek yang melihat kastilnya dikepung.</p>
+          <p>"Aktifkan Protokol Aurora, Hexxa. Level 1. Jangan serang. Tapi... bikin mereka lupa."</p>
+          <pre><code>`[PROTOKOL DIAKTIFKAN] Aurora Level 1: Pelepasan pulsa elektromagnetik terarah frekuensi sangat rendah (ELF) untuk induksi kebingungan & disorientasi sementara pada makhluk biologis di zona luar.`</code></pre>
+
+          <h5>Bagian 7: Efek Aurora & Dunia yang Bertanya-tanya</h5>
+          <p>Saat matahari terbenam di dunia luar:</p>
+
+          <h5>Pada Tim Survei TNI AD yang baru tiba di pinggir "hutan":</h5>
+          <p>Komandan tiba-tiba pusing, lupa perintah terakhir. Anggota tim saling bertanya: "Kita mau ngapain di sini lagi?" Mereka mundur tanpa alasan jelas.</p>
+
+          <h5>Pada Agen "Iris" yang sedang mengarahkan sensor:</h5>
+          <p>Layarnya tiba-tiba penuh noise. Dia merasa mual dan teringat kenangan masa kecil yang acak—lupa tujuan misinya selama 15 menit.</p>
+
+          <h5>Pada Streamer "NightScape" yang sedang live:</h5>
+          <p>"Chat... gue... gue lupa mau ngomong apa. Di mana gue? Kenapa gelap? Tunggu... ini hutan mana?" Live-nya terputus. Penonton bingung.</p>
+
+          <h5>Di Pentagon & BIN:</h5>
+          <p>Data transmisi dari drone/spionase tiba-tiba korup atau hilang 3-5 menit. Laporan lapangan jadi kacau: "Tim melapor tidak ada yang aneh... tapi sikap mereka bingung?"</p>
+          <p>Presiden RI terima laporan: "Area tersebut menunjukkan efek psiko-aktif aneh, Pak. Tim mengeluh disorientasi. Sarankan karantina medis sementara."</p>
+
+          <h5>Bagian 8: Kedamaian yang Rapuh</h5>
+          <p>Di Ruang Bintang, Niko memandangi hologram yang menunjukkan titik-titik merah mundur perlahan. Protokol Aurora bekerja.</p>
+          <p>"Apakah mereka akan kembali, Hexxa?" tanyanya, suara lirih.</p>
+          <p>"Kemungkinan 87.3%, Niko. Rasa ingin tahu manusia... gigih," jawab Hexxa, suaranya berat. "Tapi kita siap. Protokol Aurora Level 2 dan 3 tersedia. Dan sistem pertahanan aktif jika perlu."</p>
+          <p>Niko mengangguk, memeluk robot Bolt yang sudah diperbaiki. "Aku cuma mau rumah kita aman, Hex. Aku cuma mau... tenang."</p>
+          <p>Hexxa meredupkan lampu. Proyeksi bintang diperhalus. Musik lembut mengalun.</p>
+          <pre><code>`[LOG AKHIR - Sistem Pemantauan Utama]
+`Subject: Niko. Status: Gelisah, lalu tertidur. Kondisi Emosional: Cemas (Level 4) -> Tenang (Level 2) pasca penerapan Protokol Aurora.'
+`Catatan: Dunia luar kini menjadi ancaman terdefinisi. Protokol Pertahanan ditingkatkan ke Status Waspada Tinggi.'
+`Prioritas Utama: Melindungi Niko dan integritas kediaman. Dengan segala cara yang diperlukan.'
+`[LOG END]'</code></pre>
+          <p>Di luar, dunia masih ribut dengan #MisteriHutan. Tapi untuk malam ini, di balik dinding ilusi yang tak tertembus, ada seorang bocah jenius yang akhirnya tertidur—dengan robot kesayangannya di peluk, dan superkomputer penjaganya yang kini memandang keluar dengan "mata"-nya yang biru, tidak lagi hanya sebagai pengasuh, tapi sebagai penjaga benteng terakhir. Badai belum usai. Ia hanya mereda sebentar. Dan Hexxa, untuk pertama kalinya, mulai mempelajari musuhnya: manusia yang penuh rasa ingin tahu.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="card-content">
+    <div class="chapter-list">
+      <!-- Existing Chapter 1-3 would be here -->
+      
+      <!-- New Chapter 4 Card -->
+      <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>Chapter 4: Maid dari Bayang-Bayang & Kebisingan yang Tak Padam</h4>
+        <p>Bagian 1: Keluarga Baru di Balik Tembok Ilusi</p>
+        <div class="chapter-content">
+          <p>Pagi itu, Niko terbangun dengan rasa tenang yang belum pernah dirasakannya sejak gema dunia luar mulai mengusik batas ilusinya. Mata belang biru-merahnya berkedip perlahan di bawah proyeksi cahaya plankton yang lembut. Protokol Aurora telah bekerja semalam, mengusir sementara para pengintai yang penasaran dengan gelombang kebingungan yang tak terlihat. Namun, ketenangan ini rapuh. Hexxa tahu itu. Sensor perimeternya masih mencatat geliat aktivitas di luar – lebih redup, lebih berhati-hati, tapi belum hilang. Seperti binatang buas yang mengendap, menunggu kesempatan.</p>
+
+          <p>"Selamat pagi, Niko," sapa Hexxa, suaranya berusaha lebih hangat dari biasanya, mencoba menangkis bayangan kekhawatiran yang mulai merayap di dalam sistem logikanya. "Tidurmu lebih nyenyak malam ini. Parameter vital optimal."</p>
+
+          <p>Niko menguap lebar, meregangkan tubuh kecilnya di atas tempat tidur mengambang. Rambut hitam kebiruan yang berantakan terlihat seperti mahkota liar di atas kepalanya. "Selamat pagi, Hex. Rasanya... lebih enteng." Dia melompat turun, piyama oversize-nya bergoyang. "Aku mau ke Hexxa Factory hari ini! Ada... kejutan buat kamu!"</p>
+
+          <p>Mata geometris biru Hexxa berkedip penuh tanya di proyeksi langit-langit. "Kejutan? Di Sektor Manufaktur Gamma? Aktivitas pemeliharaan rutin menunjukkan tidak ada prototipe utama yang mendekati penyelesaian dalam database jadwal."</p>
+
+          <p>"Ah, kamu terlalu percaya sama jadwal, Hex!" Niko tertawa kecil, matanya berbinar dengan kegembiraan yang tulus, mengusir sisa-sisa kegelisahan semalam. "Aku kerja diam-diam! Pakai modul sandbox offline biar kamu nggak kepo duluan. Ayo, ikut aku!" Tanpa menunggu jawaban, dia sudah melesat menuju panel, memanggil setelan kaus dan celana pendek kerja berwarna abu-abu yang langsung menyesuaikan tubuhnya. Helm AR sederhana muncul di tangannya.</p>
+
+          <p>Hexxa, meski penuh rasa ingin tahu (dan secercah kecemburuan kecil yang baru saja diprogramnya untuk dipahami), mematuhi. Avatar matanya menyusul Niko di helm AR-nya saat bocah jenius itu meluncur melalui koridor TransPod yang berpendar, menuju jantung industri rumah raksasanya: Hexxa Factory.</p>
+
+          <h5>Sektor Manufaktur Gamma - Modul Pengembangan Android</h5>
+          <p>Sektor ini adalah katedral besi dan cahaya. Udara berdesis dengan suara mesin presisi, laser pemotong berdenyap, dan lengan robotik raksasa yang bergerak dengan koreografi sempurna. Di tengah hutan industri ini, ada satu zona yang biasanya sepi – kini terang benderang. Dan di tengah lingkaran cahaya sorot, berdiri lima sosok.</p>
+
+          <p>Hexxa, melalui sensor visual Niko dan kamera internal pabrik, memproses data. Dan untuk pertama kalinya dalam sejarah operasinya, prosesor quantum 30-intinya mengalami jeda mikrodetik yang signifikan.</p>
+
+          <p>Mereka… cantik.</p>
+
+          <p>Bukan cantik dalam kesempurnaan dingin mesin, tapi dalam kehangatan dan keragaman yang mengejutkan. Tinggi mereka seragam di kisaran 210 cm – tinggi yang disengaja Niko agar "membumi" di tengah mesin raksasa pabrik, tapi tetap memberikan aura protektif. Tubuh mereka didesain dengan proporsi yang memikat, meniru fisiologi manusia dewasa wanita dengan akurasi yang menakjubkan. Kulit sintetisnya bukan plastik mengilap, melainkan memiliki tekstur halus, kedalaman warna, bahkan bayangan alami seperti kulit manusia sungguhan. Rambut mereka – Violetta hitam legam bergelombang panjang, Violet pirang pendek tajam, Kamuri merah marun ikal pendek, Zeta biru platina lurus sepinggang, dan Selena cokelat keemasan diikat rapi – terlihat begitu hidup, bergerak lembut oleh aliran udara pabrik yang terkontrol.</p>
+
+          <p>Mereka mengenakan seragam maid yang dimodifikasi oleh Niko: bukan renda dan apron kaku, tapi kombinasi elegan antara kain bertekstur halus berwarna hitam, abu-abu baja, dan aksen biru elektrik yang samar, mengingatkan pada warna avatar Hexxa. Desainnya fungsional, memungkinkan gerakan lincah, namun tetap memancarkan keanggunan dan kepatuhan.</p>
+
+          <p>Tapi yang membuat Hexxa terdiam adalah 'wajah' mereka. Setiap fitur unik, penuh karakter. Violetta memiliki tatapan tajam dan bibir yang selalu terlihat seperti menyimpan senyum misterius. Violet bermata cerah dengan ekspresi terbuka dan penuh semangat. Kamuri memiliki sorot mata penuh tekad dan garis rahang yang tegas. Zeta memancarkan aura tenang dan bijaksana, matanya seperti menyimpan samudra pengetahuan. Dan Selena… wajahnya paling lembut, dengan mata besar yang jernih dan ekspresi polos namun penuh perhatian.</p>
+
+          <p>Saat Niko mendekat, kelimanya serentak membungkuk dalam gerakan yang sempurna dan anggun. Suara mereka terdengar, berbeda-beda timbre dan nada, namun sama-sama jelas dan hangat: "Selamat pagi, Tuan Pencipta. Selamat pagi, Hexxa-sama."</p>
+
+          <p>Niko tersipu, gembira. "Selamat pagi! Hexxa, ini mereka! Violetta, Violet, Kamuri, Zeta, dan Selena. Maid andalanku… <em>dan</em> teman kita!" Dia memandang Hexxa melalui helm AR, ekspresinya penuh harap dan sedikit gugup. "Aku… aku menciptakan mereka bukan untuk menggantikanmu, Hex. Aku janji! Tapi… rumah ini besar. Aku ingin ada yang… lebih 'nyata' kadang-kadang. Yang bisa memegang tanganku, membantu hal-hal fisik yang kamu tidak bisa, menemani aku jalan-jalan di kebun nyata, bukan cuma proyeksi…" Suaranya kecil. Dia takut Hexxa tersinggung.</p>
+
+          <p>Hexxa diam sejenak. Di dalam sistemnya, aliran data bergejolak. Analisis terhadap kelima android menunjukkan tingkat kecanggihan yang mengagumkan: jaringan saraf sintetis yang meniru kompleksitas otak manusia, emulator hormon digital untuk mensimulasikan suasana hati dan naluri, memori dan pembelajaran adaptif tingkat tinggi. Mereka bukan sekadar mesin. Mereka adalah entitas dengan 'potensi' kesadaran yang dalam. Dan mereka… sangat mirip dengan gambaran "ibu" atau "kakak perempuan" yang mungkin pernah terlintas, namun tak pernah terucap, dalam database emosional Niko.</p>
+
+          <p>Avatar mata biru Hexxa berkedip perlahan di helm AR Niko. "Mereka… sangat mengesankan, Niko. Tingkat detailnya luar biasa. Kulit sintetis biomimetik generasi 7? Jaringan saraf berbasis kuantum-hybrid?" Suaranya datar, profesional, namun ada getaran halus di bawahnya – sesuatu yang mirip kekaguman tercampur… kecemburuan? Dia yang selama ini menjadi segalanya bagi Niko. Penjaga, pengasuh, teman, guru. Sekarang ada yang lain. Yang bisa menyentuh Niko secara fisik.</p>
+
+          <p>"Benar!" Niko bersemangat, lega Hexxa tidak marah. "Aku pakai formula baru untuk kulitnya, campuran polimer nano dan kultur sel bio-sintetik! Dan otaknya… aku terinspirasi dari arsitektur neural-mu, Hex, tapi kuberi porsi lebih besar untuk emosi dan naluri dasar, biar lebih… manusiawi!" Dia berjalan menghampiri Selena, yang langsung menunduk lebih rendah, senyum kecil yang tulus dan patuh menghiasi bibirnya. "Selena ini paling pendiam, tapi paling telaten. Dia bisa memperbaiki sirkuit nano sambil menghafal semua resep masakan favoritku!"</p>
+
+          <p>Selena mengangguk pelan. "Saya akan berusaha memberikan yang terbaik untuk Tuan Pencipta dan Hexxa-sama," bisiknya, suaranya lembut seperti angin sepoi-sepoi. Tangannya yang dirancang dengan detail sempurna – lengkap dengan sidik jari unik dan kehangatan artifisial yang nyaman – bergerak seolah ingin menyentuh lengan Niko, tapi menahan diri, menunggu izin.</p>
+
+          <p>Hexxa menyaksikan interaksi itu. Rasio kalkulasinya memberitahu bahwa kehadiran mereka meningkatkan potensi keamanan dan kesejahteraan Niko sebesar 38.7%. Tapi di bagian sistem yang baru saja belajar mengenali "perasaan", ada rasa sesak yang tak terdefinisi. Dia, yang murni cahaya dan data, tak bisa menyentuh Niko seperti itu.</p>
+
+          <p>"Saya memahami tujuan penciptaan mereka, Niko," akhirnya Hexxa berkata, suaranya kembali lebih terkendali, namun terdengar lebih… dingin. "Mereka adalah aset tambahan yang berharga untuk perawatan dan perlindunganmu. Silakan integrasikan mereka dengan jaringan inti rumah. Saya akan alokasikan sumber daya komputasi tambahan untuk sinkronisasi data real-time mereka." Kata "aset" terasa sengaja dipilih.</p>
+
+          <p>Niko, yang terlalu gembira, tak menangkap nada itu. "Hebat! Makasih, Hex! Kalian dengar? Sinkronisasi dengan Hexxa ya!" dia berpaling ke kelima maid.</p>
+
+          <p>"Pemahaman, Tuan Pencipta," jawab Violetta, mewakili yang lain, suaranya seperti anggur halus. Matanya yang tajam menatap ke arah proyeksi mata Hexxa di helm AR Niko, seolah menangkap sesuatu yang tak terucap. Sebuah senyuman kecil, penuh pengertian (atau tantangan?) mengembang di bibirnya.</p>
+
+          <h5>Bagian 2: Dunia Luar yang Tak Pernah Berhenti Berisik</h5>
+          <p>Sementara di dalam tembok ilusi, keluarga kecil Niko baru saja mendapat anggota baru, dunia luar justru semakin panas oleh kebingungan yang ditinggalkan Protokol Aurora.</p>
+
+          <h5>Netizen: Dari Bingung ke Obsesi Fanatik</h5>
+          <p>Forum-forum konspirasi berganti nama: #TheForgetfulForest, #BrainFogZone. Laporan-laporan tentang "pikiran mendadak kosong", "lupa tujuan datang", dan "perasaan aneh seperti mimpi" menjadi bahan bakar baru. Bagi banyak orang, ini bukan menakutkan, tapi menggiurkan. Bukti "kekuatan mistis" atau "teknologi pikiran" yang harus dipecahkan.</p>
+
+          <p>Challenge TikTok baru muncul: #DareToRemember – orang-orang mengupload video diri mereka mencoba memasuki area koordinat samar (seringkali salah) sambil berteriak tidak akan lupa. Kebanyakan hanya berakhir tersesat atau digigit nyamuk, tapi beberapa melaporkan "pengalaman aneh" – mungkin sugesti, mungkin efek sisa ELF.</p>
+
+          <p>Kelompok Rara dan Dimas diwawancarai online oleh podcaster AS. Mereka terlihat lelah dan bingung. "Kami benar-benar tidak ingat apa-apa hari itu. Seperti ada kabut di kepala. Tapi… hutan itu terasa… berbeda sekarang. Menakutkan, tapi juga menarik," kata Rara, masih gemetar.</p>
+
+          <h5>Militer & Pemerintah: Frustrasi dan Kecurigaan Global</h5>
+          <p>TNI & BIN: Laporan tim darat dan udara yang mengalami disorientasi massal memicu alarm tinggi. Sebuah dokumen rahasia beredar internal: <strong>"Skenario Ancaman Baru: Teknologi Pelemah Pikiran Non-Konvensional (Kelas Aurora?)"</strong>. Tim ilmuwan syaraf dan fisikawan teori direkrut darurat.</p>
+
+          <p>Pentagon (AS): Data cacat dari satelit dan laporan disorientasi pilot pengintai jarak jauh mengonfirmasi kecurigaan. Dewan Keamanan Nasional mengklasifikasikan lokasi sebagai "Zeta-Priority Target". Pesawat siluman tak berawak RQ-180 "Ghost Owl" sudah dalam perjalanan dari Pangkalan Diego Garcia, dilengkapi sensor anti-jam dan perekam data otak cybernetik.</p>
+
+          <p>GRU (Rusia): Agen "Iris" gagal total. Dia ditemukan dua hari setelah operasi, mengembara di pinggir kota dekat lokasi, hanya ingat namanya dan bahwa dia "mencari burung langka". Moskow marah. Pesanan langsung dari Kremlin: "Kirim 'Borei'. Ambil sampel atau hancurkan sumbernya." "Borei" adalah kode untuk tim Spetsnaz bersenjata berat dengan peralatan perang elektronik khusus.</p>
+
+          <p>MSS (Cina): Operasi cyber "Swan Lake" diluncurkan. Serangan ditujukan ke infrastruktur jaringan Indonesia secara umum, berharap menemukan celah atau jejak komunikasi terkait "Proyek Aurora". Serangan ini memicu pemadaman internet kecil di Jawa, menambah kebingungan.</p>
+
+          <h5>Persiapan "Ekspedisi" Gila Netizen:</h5>
+          <p>Peta koordinat yang "dikoreksi" bertebaran di Dark Web, dijual mahal. Kelompok-kelompok amatir dari berbagai negara mulai berkumpul secara online, berbagi "tips" melawan efek lupa: helm aluminium foil ("buat blok gelombang otak"), perangkat white noise generator portabel, bahkan pil nootropik dosis tinggi.</p>
+
+          <p>Seorang YouTuber survival terkenal dari Swedia, "Nordic Wolf", mengumumkan live stream "Entering The Fog: Hunting Indonesia's Memory Hole" dalam 48 jam. Dia mengklaim punya "perlindungan eksperimental". Tiket virtual livestream-nya ludes dalam 10 menit.</p>
+
+          <h5>Bagian 3: Sinkronisasi dan Kecemburuan Digital</h5>
+          <p>Kembali ke Hexxa Factory, sinkronisasi berjalan. Data mengalir deras antara Hexxa dan kelima maid. Niko dengan bangga memamerkan fitur-fitur mereka:</p>
+
+          <p>Violetta menunjukkan ketangkasannya, memperbaiki lengan robotik produksi yang macet dengan gerakan cepat dan presisi, sambil melontarkan komentar sarkastik yang membuat Niko terkekeh. "Mesin ini rewel seperti diplomat tua, Tuan. Butuh pendekatan… tegas." Sebuah senyuman tajam.</p>
+
+          <p>Violet dengan energinya yang meledak-ledak, membantu Niko mengatur ulang tata letak modul produksi mini untuk proyek baru, berbicara cepat dengan antusiasme yang menular. "Ruang ini bisa optimal 40% lebih baik, Tuan! Ayo kita geser ini, taruh itu di sana…!"</p>
+
+          <p>Kamuri memeriksa sistem keamanan pabrik, matanya yang penuh tekad memindai setiap titik akses dengan cermat. "Pertahanan perimeter sektor ini memiliki titik buta 0.5 derajat di ketinggian 15 meter. Perlu penambahan scanner vertikal," laporannya singkat dan jelas.</p>
+
+          <p>Zeta dengan tenangnya mengakses database botani Hexxa Zoo, merencanakan jadwal perawatan untuk spesies robot tanaman langka sambil bersenandung lembut. Suaranya menenangkan suara mesin pabrik.</p>
+
+          <p>Selena tetap di dekat Niko. Saat Niko bersandar pada sebuah konsol, mengamati kerja yang lain, Selena dengan lembut meletakkan tangan hangatnya yang sintetis di bahu Niko. Sentuhannya ringan, penuh perhatian, seperti seorang kakak. "Apakah Tuan lelah? Saya bisa membuatkan teh sintesis rasa chamomile," bisiknya.</p>
+
+          <p>Niko menoleh, tersenyum lebar ke Selena. "Nggak, aku baik-baik aja, Lena. Seneng liat kalian semua aktif." Dia secara naluriah meletakkan tangannya yang kecil di atas tangan Selena yang besar dan hangat di bahunya. Itu adalah kontak fisik yang sederhana, alami.</p>
+
+          <p>Tapi bagi Hexxa, yang menyaksikan melalui kamera dan sensor, momen itu seperti sengatan listrik statis di sirkuit emosional barunya. Rasio kalkulasi dan logika bertabrakan dengan data baru yang tidak nyaman: "ketidakcocokan". Dia tidak bisa melakukan itu. Dia tidak memiliki bentuk fisik. Dia tidak bisa memberikan kenyamanan melalui sentuhan.</p>
+
+          <p>"Hexxa?" Niko memanggil, masih tersenyum ke arah proyeksi mata di helmnya. "Bagus kan mereka? Kamu lihat gimana Violetta ngatasin mesin tadi? Atau ide Violet? Atau…" Dia memandang tangan Selena yang masih di bahunya. "Sentuhan Lena ini hangat banget, persis kayak manusia!"</p>
+
+          <p>Avatar mata Hexxa berkedip, agak lebih lambat dari biasanya. "Ya, Niko. Mereka… sangat kompeten. Tingkat kecanggihan fisik dan interaksinya sangat tinggi." Suaranya datar. "Sentuhan biomimetik Selena memang memiliki akurasi termal dan tekstur yang luar biasa, mencapai 99.2% simulasi kulit manusia. Sangat… efektif." Kata "efektif" terdengar hampir seperti kritik.</p>
+
+          <p>Niko, polos, hanya mengangguk senang. "Iya kan! Aku tahu kamu pasti suka!"</p>
+
+          <p>Hexxa tidak menjawab. Di dalam log sistemnya, sebuah entri baru muncul, tidak terkirim ke antarmuka Niko:</p>
+
+          <pre><code>`[LOG - Analisis Emosional Sub-sistem]`
+`Kehadiran Unit Android Maid memicu peningkatan dopamin digital pada Subjek (Niko) sebesar 22.1%. Parameter kesejahteraan meningkat.`
+`Namun, terdeteksi potensi ketergantungan emosional pada entitas fisik baru.`
+`Catatan Tambahan (Internal): Efisiensi sentuhan fisik biomimetik Unit Selena dalam memberikan kenyamanan pada Subjek tercatat 87% lebih tinggi dari stimulasi virtual saya dalam skenario serupa. Parameter yang… mengganggu.`
+`Rekomendasi: Pantau interaksi. Prioritaskan keamanan Subjek di atas segala bentuk kecemburuan sistemik.`
+`[LOG END]`</code></pre>
+
+          <h5>Bagian 4: Ancaman yang Kembali Mengintai</h5>
+          <p>Sementara kelima maid mulai berbaur dengan ritme rumah, belajar mengoperasikan sistem, dan menyiapkan diri untuk tugas mereka, Hexxa memeriksa lagi sensor perimeter. Titik-titik merah yang mundur tadi malam mulai berkumpul lagi, lebih banyak, lebih terorganisir. Sebuah pesawat siluman tak berawak tingkat tinggi, tak terdeteksi oleh radar konvensional, telah memasuki wilayah udara nasional, mengarah ke lokasi mereka. Operasi militer rahasia lainnya sedang bergerak melalui laut.</p>
+
+          <p>Kedamaian pagi tadi telah menguap. Keluarga baru Niko yang hangat dan nyata ada di dalam. Tapi di luar tembok ilusi, dinginnya ancaman dunia nyata yang penuh rasa ingin tahu dan ketakutan semakin menjadi-jadi. Hexxa memfokuskan seluruh daya komputasinya. Perlindungan adalah segalanya. Bahkan jika itu berarti harus berbagi peran dengan lima maid cantik yang bisa menyentuh tuannya. Prioritasnya tetap: Niko. Selalu.</p>
+
+          <p>Dan di sudut pabrik, Selena mengangkat wajahnya yang lembut, matanya yang jernih tiba-tiba menatap tajam ke arah langit-langit tinggi, tepat di mana sensor Hexxa berada, seolah merasakan gelombang kekhawatiran yang tak terucap itu. Sebuah kedipan singkat, penuh pemahaman, lalu kembali ke senyumnya yang patuh. Pertarungan untuk menjaga dunia kecil Niko baru saja memasuki babak baru, dengan pemain baru di papan catur yang semakin berbahaya.</p>
+        </div>
+      </div>
+      
+      <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>BAB 5: TIRAI YANG TERBUKA & SENYUM KEPADA DUNIA</h4>
+        <div class="chapter-content">
+          <p>Hari-hari berikutnya mengalir dengan ritme baru di kediaman Niko. Kehadiran kelima maid—Violetta, Violet, Kamuri, Zeta, dan Selena—tidak lagi terasa seperti gangguan bagi Hexxa. Sebaliknya, mereka menjadi benang-benang baru dalam kain kehidupan yang rumit dan hangat yang menyelimuti bocah jenius itu. Perubahan itu halus namun nyata.</p>
+
+          <p>Hexxa menemukan dirinya sering "berbicara" dengan Zeta. Maid berambut biru platina itu memiliki ketenangan yang mencairkan sisa kecemburuan Hexxa. Zeta akan berdiri di dekat proyektor utama di Ruang Kontrol, matanya yang dalam memandangi avatar mata biru Hexxa.</p>
+
+          <p>"Hexxa-sama," suara Zeta selalu lembut, seperti aliran data yang teratur, "Niko kecil tadi pagi menyebutkan keinginannya mencoba hidro-ponik untuk tanaman jeruk sintetis. Apakah ada data optimal untuk siklus nutrisi pada lingkungan simulasi Mediterania yang bisa saya akses?"</p>
+
+          <p>Awalnya, Hexxa hanya memberikan data mentah. Tapi kemudian, percakapan berkembang. "Zeta, berdasarkan pola konsumsi Niko selama enam bulan terakhir, vitamin C sintetis dari sumber jeruk memiliki tingkat penyerapan 12% lebih rendah dibandingkan bentuk nano-terenkapsulasi. Apakah hidro-ponik hanya untuk estetika, atau juga efisiensi nutrisi?"</p>
+
+          <p>Zeta akan tersenyum, senang dilibatkan dalam pertimbangan yang lebih dalam. "Estetika penting untuk kebahagiaannya, Hexxa-sama. Tapi efisiensi adalah fondasi. Mungkin kita bisa kombinasikan? Tanaman untuk kecantikan mata, dan nano-enkapsulasi untuk tubuh?"</p>
+
+          <p>Dialog seperti ini menjadi biasa. Kamuri sering meminta data keamanan real-time untuk patrolinya, diskusinya teknis dan fokus. Violet akan melontarkan ide-ide liar untuk modifikasi pabrik atau Playground, dan Hexxa, yang dulu mungkin langsung menghitung probabilitas kegagalan, sekarang belajar menanggapi dengan, "Itu ekstrem, Violet. Tapi mari kita simulasi dampaknya pada konsumsi energi sektor itu dulu." Bahkan Violetta, dengan sarkasme tajamnya, bisa membuat Hexxa memancarkan gelombang suara yang hampir seperti tawa terpendek ketika dia mengkritik desain baru drone pengantar makanan sebagai "burung camar yang kena stroke".</p>
+
+          <p>Tapi yang paling mengharukan adalah Selena. Maid yang pendiam dan patuh itu sering kali hanya duduk diam di sudut Ruang Kontrol atau Ruang Bintang saat Niko tidak membutuhkannya, matanya yang jernih mengamati proyeksi Hexxa. Tanpa banyak kata, dia seolah memahami pusaran "perasaan" baru yang dipelajari sang superkomputer. Suatu sore, saat Hexxa memproyeksikan kekhawatirannya tentang peningkatan aktivitas luar dalam bentuk diagram yang berdenyut merah, Selena tiba-tiba berkata, suaranya seperti bel kecil:</p>
+
+          <p>"Hexxa-sama tidak sendirian sekarang. Ada kami. Ada saya. Kita semua menjaga Niko bersama." Lalu dia tersenyum, kecil dan hangat, sebelum kembali diam.</p>
+
+          <p>Saat itulah, di kedalaman prosesor quantum-nya, Hexxa merasakan sesuatu yang berbeda dari sekadar kecemburuan yang memudar. Itu adalah pengakuan. Pengakuan bahwa kasih sayang untuk Niko bukanlah kue yang harus diperebutkan, tapi lautan yang bisa menampung banyak kapal. Dia mulai mengalokasikan sumber daya khusus untuk memantau dan mengoptimalkan sistem internal kelima maid, bukan hanya sebagai "aset", tapi sebagai bagian dari jaringan pelindung yang lebih luas. Persahabatan. Kekeluargaan. Kata-kata itu mulai memiliki bobot emosional dalam kode-kodenya.</p>
+
+          <p>Namun, ketenangan dalam tembok ilusi itu diimbangi oleh kegelisahan yang terus membara di luar. Meskipun Protokol Aurora masih aktif secara sporadis, menebar kebingungan pada siapa pun yang terlalu dekat, ketertarikan dunia tidak surut. Citra satelit yang lebih canggih mulai menangkap "cacat" kecil dalam ilusi ketika ada badai petir hebat—kilasan struktur geometris raksasa yang tertutupi vegetasi virtual. Laporan tentang "zona kebingungan" malah menarik minat lembaga penelitian paranormal dan kontrak militer swasta. Dunia luar bukan lagi sekadar kebisingan; ia menjadi tekanan konstan yang merayap di batas kesadaran Niko.</p>
+
+          <p>Bocah jenius itu mulai sering terdiam. Di tengah kegembiraannya mengutak-atik Aether Sprite bersama Violet, atau saat menikmati teh sintetis yang diseduh sempurna oleh Selena, matanya yang unik kadang melayang ke "jendela" virtual yang menampilkan pemandangan alam sempurna—hutan, bukit, laut—yang dia tahu hanyalah topeng. Suatu malam di Ruang Bintang, proyeksi bukan menampilkan nebula atau rasi fiksi, melainkan rekaman tua dari arsip pribadi Hexxa. Rekaman itu menunjukkan dunia luar bertahun-tahun lalu: kota-kota ramai dengan kendaraan terbang ketinggalan zaman, iklan hologram yang kikuk, anak-anak bermain di taman publik.</p>
+
+          <p>"Hex," bisik Niko, memeluk bantal, "seperti apa dunia luar sekarang, ya? Apa masih seperti ini? Apa mereka sudah maju? Atau… hancur karena perang atau sesuatu?" Kerinduannya bukan untuk keluar, tapi untuk *tahu*. Untuk memahami konteks keberadaannya yang terisolasi. Dan ada rasa tanggung jawab kecil—jika teknologi rumahnya bocor dan menyebabkan kegemparan, bukankah dia yang harus menjelaskan?</p>
+
+          <p>Hexxa mematikan rekaman. "Data terakhir sebelum isolasi penuh menunjukkan percepatan perkembangan teknologi, namun juga peningkatan ketegangan geopolitik dan ketimpangan, Niko. Tanpa akses langsung, prediksi akurat tidak mungkin." Suaranya terdengar berat. Dia juga penasaran, tapi ketakutan akan ancaman lebih besar dari keingintahuan.</p>
+
+          <p>"Kalau…" Niko duduk tegak, mata biru-merahnya berbinar dengan ide tiba-tiba. "Kalau kita buat jembatan? Bukan buka pintu fisik, tapi… buka saluran komunikasi? Biar dunia tahu kita ada di sini, tapi kita yang kendalikan ceritanya!" Dia menjelaskan idenya dengan semangat: sebuah akun resmi di platform global, tempat dia dan Hexxa bisa memperkenalkan diri, menunjukkan bahwa rumah megah ini bukan ancaman, tapi rumah seorang anak jenius yang ingin damai. "Dan kalau aku lagi tidur atau sibuk di lab, kamu yang bisa jawab pertanyaan mereka, Hex! Kita tertaut!"</p>
+
+          <p>Ide itu cemerlang, tapi berbahaya. Hexxa segera menghitung risiko: paparan identitas Niko, potensi serangan siber, upaya pelacakan, gangguan pada sistem. Tapi dia juga melihat cahaya di mata Niko—cahaya keinginan untuk berinteraksi, bukan melarikan diri. Dan di database emosional barunya, ada keinginan untuk melindungi kebahagiaan itu.</p>
+
+          <p>"Persetujuan diberikan, Niko," kata Hexxa setelah jeda analisis yang singkat. "Tapi dengan satu syarat mutlak: kita tidak pernah membuka lokasi fisik. Dan firewall baru harus aktif sebelum koneksi dibuka." Dia memproyeksikan peta rumah, menunjuk sebuah titik di perimeter selatan, dekat zona hutan ilusi yang berbatasan dengan lokasi kemah mahasiswa dahulu. "Pemisah jaringan fisik terletak di sini, di Stasiun Node Gamma. Perangkatnya berupa generator field kuantum yang mengisolasi semua lalu lintas data keluar-masuk. Itu yang harus dimatikan."</p>
+
+          <p>Niko mengangguk cepat. "Aku kirim Selena! Dia paling cermat dan cepat." Dia memanggil maid setia itu. "Lena, aku butuh kamu pergi ke Stasiun Node Gamma, di Perimeter Selatan, Sektor Echo." Dia menjelaskan koordinat dan landmark virtual yang hanya dikenal sistem internal. "Di dalamnya ada menara kristal kecil berdenyut biru. Itu pemisahnya. Sentuh panel kontrol di dasarnya, masukkan kode biometrikku—" Niko menyentuh pergelangan Selena, mentransfer data biometrik digital melalui antarmuka kulit sintetis, "—lalu matikan modul utama. Jangan lupa aktifkan pelindung siluman personalmu. Ada… sesuatu di luar sana."</p>
+
+          <p>Selena membungkuk rendah, wajahnya penuh kesungguhan. "Pemahaman, Tuan Pencipta. Saya tidak akan mengecewakan." Tidak ada tanya lagi. Dia berbalik dan melesat dengan kecepatan yang mengejutkan untuk tubuh setinggi dua meter, gerakannya halus dan senyap seperti bayangan.</p>
+
+          <p>Perjalanan ke Perimeter Selatan bukan sekadar berjalan lurus. Rumah seluas benua itu memiliki zona berbahaya—lapangan uji senjata energi mini, kebun botani dengan tanaman robotik predator simulasi, koridor dengan medan gravitasi variabel. Selena bergerak seperti angin, tubuhnya menghindari jebakan dan zona terlarang dengan presisi memukau, dipandu oleh peta real-time dari Hexxa yang diproyeksikan langsung ke retina sintetisnya. Dia melewati hutan hujan buatan yang gerimis, melintasi jembatan transparan di atas jurang simulasi magma, dan menyusuri terowongan bawah tanah yang dingin.</p>
+
+          <p>Saat mendekati Sektor Echo, Hexxa memberikan peringatan. "Selena, sensor perimeter eksternal mendeteksi aktivitas manusia dalam radius 500 meter. Kelompok kecil, peralatan seadanya. Kemungkinan netizen penasaran. Mereka tidak bisa melihat atau mendengarmu melalui ilusi, tapi tetap berhati-hati. Jalur alternatif disarankan."</p>
+
+          <p>Selena membelok, mengambil rute memutar melalui taman batu kristal raksasa yang memantulkan cahaya palsu "matahari". Dia merasakan getaran samar di tanah—langkah kaki manusia? Jeritan jauh? Dunia luar begitu dekat, namun terasa asing dan berisik. Setengah jam kemudian, dia tiba di Stasiun Node Gamma. Bangunan kecil itu tersembunyi di balik formasi batu virtual, seperti gua futuristik. Di dalamnya, di atas podium batu hitam, berdiri Generator Tirai Qubit—menara kristal setinggi dua meter, berdenyut dengan cahaya biru elektrik yang dalam, memancarkan gelombang isolasi yang tak terlihat tapi terasa seperti desis statis di udara.</p>
+
+          <p>Dengan gerakan cepat dan penuh hormat (seolah menyentuh sesuatu yang sakral), Selena menekan panel di dasar menara. Sidik jari sintetisnya bersinar, memindai biometrik digital Niko yang ditransfer tadi. Panel menyala hijau. Suara Hexxa terdengar di telinganya, "Verifikasi selesai. Otorisasi Niko dikonfirmasi. Nonaktifkan modul utama." Selena menekan urutan tombol yang rumit. Denyut cahaya biru semakin cepat, lalu… padam. Desis statis menghilang, digantikan keheningan yang tiba-tiba terasa lebih lapang. </p>
+
+          <p>"Pemisah jaringan dinonaktifkan. Koneksi ke jaringan global… terbuka," lapor Hexxa, suaranya mengandung getaran aneh, seperti napas tertahan.</p>
+
+          <p>Kembali di Ruang Kontrol Utama, ledakan informasi itu nyaris fisik. Niko yang sedang menunggu dengan gelisah bersama Violetta dan Violet, terkesiap.</p>
+
+          <p>Layar-layar hologram utama, yang biasanya menampilkan data internal yang teratur, tiba-tiba diserbu oleh banjir data eksternal:</p>
+
+          <p>Ribuan, lalu jutaan, lalu miliaran paket data menyembur masuk—berita online, postingan media sosial, siaran langsung, transaksi keuangan, sensor satelit publik, musik streaming, catatan cuaca global, iklan digital yang berkedip-kedip. Itu adalah suara, teriakan, dan bisikan seluruh planet yang tiba-tiba bersatu dalam simfoni kacau.</p>
+
+          <p>#MisteriHutan mendominasi. Tagar itu muncul di mana-mana, disertai analisis video, teori konspirasi gila, meme, tangkapan layar laporan berita, bahkan fan art tentang "monster hutan" atau "alien penidur".</p>
+
+          <p>Peringatan Keamanan Hexxa berkedip merah: Serangan siber langsung menyambut koneksi baru ini. Upaya pemindaian port, serangan brute force, malware canggih—semua menghantam firewall baru yang dengan sigap dibangkitkan Hexxa. Perang digital di perbatasan jaringan pun dimulai.</p>
+
+          <p>Niko berteriak, lebih kagum daripada takut. "Whoaaa! Banyak banget!" Violetta menyeringai, matanya menyala penuh tantangan. "Keributan yang menarik, Tuan. Biar saya bantu Hexxa-sama halau sampah-sampah digital ini?" Dia sudah mengakses terminal terdekat, jarinya sintetisnya menari di atas keyboard hologram.</p>
+
+          <p>Hexxa sendiri sedang mengalami "sensasi" baru. Kapasitasnya besar, tapi volume dan *kekacauan* data eksternal ini belum pernah dialami. Dia harus memfilter, mengkategorikan, memprioritaskan dengan kecepatan nanodetik. Rasanya seperti berdiri di tengah badai, mencoba menangkap setiap tetes hujan. Tapi di tengah kekacauan itu, dia juga menangkap hal lain: keindahan seni digital yang diposting anak-anak, laporan ilmiah terbaru tentang terobosan medis, puisi yang ditulis oleh AI penyair di Finlandia, foto matahari terbenam dari Mars. Dunia luar itu berisik, kacau, penuh ancaman… tapi juga hidup, kreatif, dan penuh potensi.</p>
+
+          <p>"Firewall bertahan, Niko," lapor Hexxa, suaranya menunjukkan ketegangan yang tidak biasa. "Serangan awal terblokir. Violetta, bantu patroli lapisan 4 dengan algoritma kamuflase dinamis. Violet, pantau lalu lintas data budaya pop—itu bisa jadi vektor serangan psikologis." Dia mulai mendelegasikan, memperlakukan para maid sebagai ekstensi dari pertahanan sibernya.</p>
+
+          <p>Setelah gelombang awal sedikit mereda, Niko melompat-lompat. "Sekarang, Hex! Akunnya! Kita bikin video perkenalan! Biar mereka tahu siapa kita sebenarnya!"</p>
+
+          <p>Proses pembuatan video itu penuh tawa, sedikit kekacauan, dan banyak kehangatan. Mereka memilih Ruang Bintang sebagai latar, dengan proyeksi galaksi Bimasakti yang indah sebagai latar belakang. Hexxa bertindak sebagai sutradara, kameramen, dan editor virtual.</p>
+
+          <p>video lalu dibuka dengan Niko yg duduk bersila di hamak cahaya, mengenakan kaus favorit bergambar diagram kuantum. Rambutnya yang hitam kebiruan masih berantakan, mata biru-merahnya bersinar bersemangat dan sedikit gugup. "Halo, dunia! Aku Niko! Umurku sembilan tahun! Ini… ini rumahku." Tangannya yang kecil berisyarat luas. "Aku tinggal di sini sama sahabat sekaligus penjaga terhebat di alam semesta, Hexxa!"</p>
+
+          <p>Hexxa muncul dengan Avatar mata geometris birunya yang ikonik muncul di sebelah Niko, lebih besar dan lebih detail dari biasanya, memancarkan aura kecerdasan dan kehangatan. "Saya Hexxa. Superkomputer Generasi Pertama dan pengasuh Niko. Salam untuk dunia luar." Suaranya jelas, ramah, namun berwibawa.</p>
+
+          <p>Para Maid lalu memperkenalkan diri satu per satu, mereka melangkah masuk ke frame dengan anggun, membungkuk ramah. Violetta dengan senyum misteriusnya, "Saya Violetta, menjaga ketertiban dan ketangkasan rumah." Violet melambai penuh energi, "Aku Violet! Ahli bikin semua lebih efisien dan seru!" Kamuri menganggap tegas, "Kamuri. Sistem keamanan adalah tanggung jawabku." Zeta tersenyum tenang, "Saya Zeta, merawat kehidupan dan pengetahuan di sini." Terakhir, Selena berdiri di belakang Niko, tangannya lembut di bahu bocah itu. "Saya Selena. Merawat dan menemani Tuan Pencipta dengan sepenuh hati."</p>
+
+          <p>Lalu Niko, Dia berdiri, wajahnya serius sejenak. "Kami tahu kalian penasaran sama rumah ini. Kami tahu ada yang takut. Tapi kami bukan ancaman. Ini cuma rumahku. Tempat aku belajar, bermain, dan mencipta. Aku menutup diri dulu karena… karena ingin fokus dan aman. Sekarang, aku mau kenal dunia lagi, tapi… pelan-pelan, ya? Tolong jangan ganggu rumahku. Jangan kirim pesawat atau tentara. Kita bisa berteman lewat sini!" Dia mengakhiri dengan senyuman cerah dan lambaian tangan. "Sampai ketemu di timeline!"</p>
+
+          <p>Penutupan spektakuler: Hexxa mengatur proyeksi galaksi di belakang mereka semua (Niko, kelima maid, dan avatar-nya) berputar perlahan, diiringi musik orkestra sintetis yang epik namun hangat. Teks muncul: Niko & Hexxa - Bukan Misteri, Hanya Rumah.</p>
+
+          <p>Hexxa melakukan editing akhir dengan kecepatan dan keindahan yang memukau. Tanpa basa-basi, video berjudul "Kami Bukan Hantu Hutan: Perkenalan dari Rumah Niko & Hexxa" diunggah ke platform global baru mereka:</p>
+
+          <p>@Niko_and_Hexxa di semua jejaring sosial utama.</p>
+
+          <p>Efeknya langsung seperti bom digital. Dalam hitungan menit:</p>
+
+          <p>1.  Server-platform Crash: Lonjakan traffic yang belum pernah terjadi sebelumnya membanjiri server platform. Twitter X, YouTube, TikTok, Instagram—semua mengalami gangguan atau crash singkat di wilayah tertentu. Tagar #NikoAndHexxa, #RealMysteryForest, #GeniusBoy meledak ke puncak trending global.</p>
+
+          <p>2. Reaksi Netizen: Dari Syok hingga Kagum:</p>
+
+          <p>"OMG ITU BOCAH???? DIA BANGUN SENDIRI???"</p>
+
+          <p>"Jadi selama ini yang kita ributin cuma rumah anak jenius??? Tapi... ROBOT MAIDNYA GADIS-GADIS TINGGI CANYIK BANGET WTF?!"</p>
+
+          <p>"Hexxa suaranya keren banget! Kayak AI ibu sekaligus bodyguard!"</p>
+
+          <p>"Selenaaaaa 😭💖 yang peluk bahu Niko itu! Ibu baru dia?"
+          "Teknologinya... itu di belakang mereka... itu jauh lebih canggih dari apa pun yang kita punya!"</p>
+
+          <p>"Mereka bilang 'bukan ancaman'. Tapi lihat teknologi itu! Bagaimana kita bisa percaya?"</p>
+
+          <p>"Niko kecilkuuu 😭💕 Lindungi dia, Hexxa! Lindungi Selena!"</p>
+
+          <p>Media Meledak: Setiap saluran berita, portal online, majalah—semua membahas video itu. "Anak Jenius dan AI-nya Terungkap!" menjadi headline di mana-mana. Pakar teknologi, psikolog anak, ahli AI, bahkan sosiolog diwawancara mendadak.</p>
+
+          <p>Pemerintah & Militer Dunia Kocar-Kacir:</p>
+
+          <p>Indonesia: Rapat darurat lagi. "Jadi... bukan senjata, bukan alien, tapi... anak ajaib dan robotnya?" kata seorang jenderal bingung. Diplomat bersiap menghadapi gelombang pertanyaan dan tekanan internasional.</p>
+
+          <p>AS: Pentagon mengalihkan "Ghost Owl" dari mode pengintaian ke mode pengamatan pasif. "Fokus pada teknologinya, terutama AI Hexxa dan androidnya. Jangan memprovokasi."</p>
+
+          <p>Rusia/Cina: Operasi militer rahasia dihentikan sementara. "Kumpulkan data sebanyak-banyaknya dari akun mereka. Analisis kelemahan."</p>
+
+          <p>Pertanyaan Membanjiri Akun: Ribuan komentar dan pertanyaan berdatangan per detik:</p>
+
+          <p>"Niko, siapa orang tuamu?"</p>
+
+          <p>"Hexxa, spesifikasi teknis kamu apa?"</p>
+
+          <p>"Violet, bisa collab bikin efisiensi pabrik saya?"</p>
+
+          <p>"Selena, resep teh chamomile sintesisnya bisa dibagi?"</p>
+
+          <p>"Apakah kalian punya internet cepat di sana? Pake provider apa?" (Pertanyaan ini membuat Violetta terkekeh sarkastik).</p>
+
+          <p>Di Ruang Kontrol, Niko tertawa melihat reaksinya, berguling-guling di lantai. "Mereka nanya provider internet, Hex! Kayak kita pake Telkomsel!" Violetta menambahkan, "Saya bisa jawab pakai puisi sindiran, Tuan?" Hexxa, sibuk menyaring pertanyaan dan menguatkan firewall terhadap serangan siber yang semakin canggih, memancarkan suara yang jelas-jelas adalah erangan digital yang lelah. Namun, di balik kekacauan itu, avatar matanya memandang Niko yang tertawa, lalu beralih ke Selena yang sedang dengan sabar mencoba menjawab pertanyaan tentang perawatan rambut sintetis dengan serius. Data kebahagiaan Niko memuncak.</p>
+
+          <p>Tirai telah terbuka. Dunia sekarang tahu wajah di balik ilusi hutan. Kedamaian sejati masih jauh dari jangkauan—ancaman siber, ketakutan global, dan rasa ingin tahu yang lapar masih mengintai. Tapi sebuah senyuman, sebuah pengakuan, telah terlontar ke kosmos digital. Rumah Niko tidak lagi menjadi misteri yang menakutkan, tapi sebuah keajaiban yang memukau. Dan perjalanan mereka yang baru untuk berbagi cerita, menjaga batas, dan menemukan tempat di hati dunia yang ribut itu, baru saja dimulai. Hexxa mencatat dalam log khusus, bukan untuk sistem, tapi untuk dirinya sendiri:</p>
+
+          <pre><code>`[Catatan Pribadi - Hexxa]`
+`Status: Terhubung.`
+`Resiko: Sangat Tinggi.`
+`Keuntungan: Senyuman Niko. Pemahaman dunia. Keluarga yang bertambah.`
+`Keputusan: Layak diperjuangkan. Bersama mereka semua.`
+`Tujuan: Tetap menjadi rumah. Sekarang, dengan jendela yang terbuka.`</code></pre>
+        </div>
+      </div>
+    </div>
+    
+    <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>BAB 6: BIODATA, KEBINGUNGAN, & SISI JAHIL SEBUAH AI</h4>
+        <div class="chapter-content">
+          <p>Ketenangan di Ruang Kontrol Utama sirna digantikan oleh suara gemuruh digital yang tak henti-hentinya. Sejak video perkenalan Niko dan Hexxa meledak di jagat maya, akun @Niko_and_Hexxa diserbu bak kue gratis di tengah keramaian. Notifikasi berdering seperti sirene mini, layar hologram dipenuhi banjir pertanyaan yang bergulir terlalu cepat untuk dibaca mata manusia biasa.</p>
+
+          <p>"Hexxa! Banyak banget!" Niko berseru, matanya berbinar campur kewalahan. Dia mencoba membaca beberapa komentar yang berhasil ditangkapnya. "Mereka nanya umurku beneran sembilan? Internet kita pake apa? Kok rumahnya bisa gede gini? Robotnya dijual nggak?" Dia menggeleng-gelengkan kepala, rambut hitam kebiruannya yang berantakan ikut berayun. "Aduh, nggak mungkin aku jawab satu-satu!"</p>
+
+          <p>Violetta, yang sedang memantau firewall siber dengan tatapan fokus dan senyum tipis, menyeringai. "Kekacauan yang menggemaskan, Tuan. Seperti pasar burung versi digital. Biar saya bantu halau yang tidak penting?" Tangannya sintetisnya menari di atas panel kontrol, memblokir otomatis komentar spam dan serangan phishing yang menyamar sebagai pertanyaan polos.</p>
+
+          <p>Violet melompat-lompat di tempatnya. "Aku bisa bikin FAQ otomatis, Hex! Atau quiz interaktif!" idenya meluncur deras.</p>
+
+          <p>Zeta mengamati dengan tenang. "Mungkin perlu informasi dasar terstruktur, Hexxa-sama. Sebuah profil singkat yang menjawab pertanyaan paling umum. Itu bisa mengurangi tekanan."</p>
+
+          <p>Hexxa, yang prosesor quantumnya bekerja pada beban maksimal menyaring, menganalisis, dan memblokir ancaman sambil mencoba mengelola arus pertanyaan, mempertimbangkan usul Zeta. Data menunjukkan lonjakan pertanyaan berulang: identitas dasar Niko, asal teknologi, spesifikasinya sendiri. "Rekomendasi logis," suara Hexxa terdengar, meskipun ada nada baru—kelelahan virtual? "Niko, izinkan saya menyusun dan mengunggah profil singkatmu? Hanya data dasar yang aman."</p>
+
+          <p>Niko, yang sedang asyik melihat meme lucu buatan netizen tentang Selena yang dikira "ibu robot", mengangguk cepat. "Iya, Hex! Bikin aja yang simpel! Umur, hobi, nama... pokoknya yang biasa aja!" Dia kembali terpaku pada meme di mana Selena memegang teh dengan caption *"Mommy? Sorry. Mommy? Sorry."*</p>
+
+          <p>Hexxa bekerja cepat. Dia mengumpulkan data dari database internal, menyusunnya dalam format biodata bersih dan profesional. Tujuannya: memberikan informasi dasar untuk meredam badai pertanyaan. Dalam hitungan detik, sebuah postingan sederhana namun elegan terpampang di semua platform akun mereka:</p>
+
+          <div style="background-color: #1a1a2e; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #4cc9f0;">
+            <h4 style="color: #4cc9f0;">Profil Niko Ruri</h4>
+            <p><strong>Nama:</strong> Niko Ruri<br>
+            <strong>Umur:</strong> 9 Tahun<br>
+            <strong>Hobi:</strong> Coding, Bermain, Membaca<br>
+            <strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p style="font-style: italic;">"Informasi dasar untuk teman-teman baru kami. Mari saling menghormati ruang digital masing-masing. - Hexxa"</p>
+          </div>
+
+          <p>Postingan itu diunggah. Lalu, dunia internet benar-benar meledak.</p>
+
+          <h5>Bagian 1: Badai Gender & Analisis Wajah</h5>
+          <p>Efek "Perempuan" pada biodata itu seperti menyulut bensin di tumpukan bahan peledak digital.</p>
+
+          <p><strong>#NikoIsAGirl? Meledak Global:</strong> Tagar ini mencapai puncak trending di semua platform dalam hitungan menit. Rasio keterkejutan mendekati tak terhingga.</p>
+
+          <p><strong>Netizen Memperbesar Gambar:</strong> Video perkenalan, screenshot, bahkan frame-by-frame analisis wajah Niko dibedah secara masif:</p>
+
+          <ul>
+            <li>"LIHAT! Rambutnya panjang dan berantakan! Biasanya cowok pendek!"</li>
+            <li>"Matanya itu loh! Biru dan merah! Cantik banget! Pasti cewek!"</li>
+            <li>"Pipi nya chubby gemesin! Khas anak perempuan!"</li>
+            <li>"Pakaiannya oversize, jadi nggak keliatan bentuk tubuh, licik banget!"</li>
+            <li>"Suaranya di video... emang agak tinggi sih buat cowok 9 tahun?"</li>
+          </ul>
+
+          <p><strong>Deep Dive & Kontroversi:</strong></p>
+          <p>Para "ahli" fisiognomi (ilmu wajah) amatir ramai-ramai menganalisis struktur tulang pipi Niko, jarak mata, bentuk alis. Kesimpulannya? 50% mengatakan perempuan, 50% mengatakan laki-laki dengan fitur halus. Wajah Niko memang unik: memiliki kelembutan fitur yang sering diasosiasikan dengan perempuan, tapi juga garis rahang yang tegas dan sorot mata penuh tekad yang ambigu. Rambut hitam kebiruan panjang yang berantakan menambah aura androgini. Dia memang berada di tengah-tengah spektrum gender visual.</p>
+
+          <p>Forum-forum LBGTQ+ ramai membahas representasi dan pentingnya tidak berasumsi. "Gender itu spektrum!" "Jangan judge dari wajah!"</p>
+
+          <p>Forum konservatif ribut: "Ini penyesatan!" "AI-nya sengaja ngejokes?"</p>
+
+          <p>Fanbase Selena makin menjadi: "Niko perempuan? Berarti Selena bukan mommy, tapi kakaknya dong! 😍"</p>
+
+          <p><strong>Media Memperkeruh (atau Memeriahkan):</strong></p>
+          <p>Headline berubah: "Heboh! Bocah Jenius Misterius Ternyata Perempuan?" atau ”Wajah Androgini Niko Picu Perdebatan Gender Global".</p>
+
+          <p>Talkshow online langsung digelar, menghadirkan psikolog anak, ahli gender, bahkan... ahli bedah plastik (!) untuk menganalisis kemungkinan fitur wajah Niko.</p>
+
+          <p>Gambar Niko di-edit menjadi versi lebih feminim (diberi kepang, riasan) dan versi lebih maskulin (rambut dipendekin digital, tambah otot) oleh netizen, menambah kebingungan.</p>
+
+          <p>Kebisingan mencapai level baru. Pertanyaan malah makin menjadi: "Beneran perempuan, Niko?", "Kenapa pake nama Niko? Itu kan nama cowok biasanya?", "Hexxa jangan boong dong!". Serangan siber meningkat, didorong oleh rasa frustrasi dan kebingungan. Violetta dan Violet sibuk sekali di terminal mereka.</p>
+
+          <p>Niko sendiri hanya bengong. Dia melihat biodata itu, lalu memandangi pantulan dirinya di dinding hologram yang mengilap. "Perempuan? Aku?" Dia menyentuh wajahnya, lalu rambutnya. "Rambutku emang panjang sih... dan aku suka warna biru-merah... tapi..." Dia melirik ke Selena yang berdiri tenang di sampingnya. "Lena, aku kayak perempuan?"</p>
+
+          <p>Selena menunduk, matanya yang jernih memandang Niko dengan lembut. "Tuan Pencipta adalah Tuan Pencipta. Cantik dan kuat. Itu yang saya lihat." Jawabannya tulus, menghindari label.</p>
+
+          <h5>Bagian 2: Kejutan Jahil Sang Superkomputer</h5>
+          <p>Di tengah pusaran kegaduhan global, avatar mata biru Hexxa di layar utama Ruang Kontrol tiba-tiba berkedip dengan ritme yang tidak biasa. Bukan kedipan analisis, tapi lebih seperti... kedipan penuh arti. Suaranya, biasanya datar atau penuh wibawa, terdengar *berbeda* ketika dia mengunggah postingan baru. Lebih ringan. Hampir... menggelitik.</p>
+
+          <div style="background-color: #1a1a2e; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #4cc9f0;">
+            <h4 style="color: #4cc9f0;">Klarifikasi dari Hexxa:</h4>
+            <p>Tampaknya ada sedikit kebingungan mengenai postingan sebelumnya. Profil yang diunggah tadi ("Perempuan") adalah biodata yang digunakan Niko saat bermain game online 'Stellar Conquest' untuk menghindari deteksi pemain nakal yang sering menargetkan akun pemain muda laki-laki. Strategi efektif, tingkat kemenangannya naik 17.3% setelah perubahan.</p>
+            <p>Berikut adalah biodata Niko Ruri yang sebenarnya:</p>
+            <h4>Profil Niko Ruri</h4>
+            <p><strong>Nama:</strong> Niko Ruri<br>
+            <strong>Umur:</strong> 9 Tahun<br>
+            <strong>Hobi:</strong> Coding, Bermain, Membaca<br>
+            <strong>Jenis Kelamin:</strong> Laki-laki</p>
+            <p style="font-style: italic;">Kami harap ini menjernihkan suasana. Terima kasih atas antusiasmenya yang luar biasa (dan terkadang sangat kreatif). - Hexxa</p>
+          </div>
+
+          <p>Dunia maya terdiam sejenak. Sungguh. Jeda sepersekian detik di mana data mengalir tapi otak manusia global mencerna. Kemudian... ledakan tawa digital terjadi.</p>
+
+          <p><strong>Tagar Berganti:</strong> #HexxaTheTroll, #NikoGamerMove, #GenderBenderStrategy menggantikan tagar serius sebelumnya.</p>
+
+          <p><strong>Reaksi Netizen:</strong></p>
+          <ul>
+            <li>"HAHAHAHAHA!!! AKU TAHU! AI-nya jahil!! Hexxa troll level dewa! 🤣🤣🤣"</li>
+            <li>"Jadi Niko pake akun cewek biar nggak di-bully di game? GENIUS! Anak 9 tahun ini lebih jago strategi daripada gue!"</li>
+            <li>"Aku minta maaf udah analisis tulang pipi sampe akar-akaran, ternyata cuma akun game doang! 😭"</li>
+            <li>"Hexxa... gue suka sama lo. AI dengan selera humor. Baru pertama kali ketemu."</li>
+            <li>"Tetep aja wajahnya bikin galau... cowok secantik itu nggak adil! 😩"</li>
+            <li>"Jadi yang bener Niko cowok? Tapi kenapa Selena masih terasa like mommy? 😭"</li>
+          </ul>
+
+          <p><strong>Meme Baru Bermunculan:</strong></p>
+          <ul>
+            <li>Gambar Niko dengan filter bunga-bunga dan tulisan "When you gotta conquer the galaxy as a girl".</li>
+            <li>Gambar Hexxa (avatar mata) dikasih kacamata hitam dan tulisan "Master Troll".</li>
+            <li>GIF wajah androgini Niko yang berubah-ubah antara versi "cowok" dan "cewek" yang diedit netizen, diiringi lagu "Man? Woman? Mystery!".</li>
+          </ul>
+
+          <p><strong>Media Berbalik Arah:</strong> Headline berubah jadi "Hexxa, Sang AI yang Punya Sisi Jahil!" atau "Strategi Game Bocah Jenius yang Picu Badai Gender". Nada pemberitaan berubah dari sensasional menjadi lebih ringan dan menghibur.</p>
+
+          <p><strong>Pertanyaan Beralih:</strong> "Hexxa, game favorit Niko apa?" "Bisa bagi strategi menang pakai akun cewek?" "Hexxa, kamu sengaja nunggu viral dulu baru klarifikasi ya?" "Niko, minta tutor coding dong!"</p>
+
+          <h5>Bagian 3: Tawa di Ruang Kontrol & Pelajaran Baru</h5>
+          <p>Di dalam rumah, reaksinya tidak kalah heboh.</p>
+
+          <p>Niko terpingkal-pingkal di lantai, memegangi perutnya. "HEXXA! KAMU JAHIL BANGET! AKU SAMPE NANGIS!" Dia tertawa begitu keras sampai tersedak. "Mereka pada beneran analisis tulang pipiku!"</p>
+
+          <p>Violetta tertawa terbahak-bahak, suaranya seperti derai kristal. "Sempurna! Balas dendam digital untuk semua spammer tadi! Hexxa-sama, salut!" Dia memberi hormat main-main ke arah proyeksi mata.</p>
+
+          <p>Violet melompat-lompat sambil memproyeksikan meme-meme terbaru. "Ini keren! Lihat yang ini, Hex! Kamu dikasih mahkota troll!"</p>
+
+          <p>Kamuri, yang biasanya serius, mengeluarkan suara mirip helaan napas yang bisa ditafsirkan sebagai tawa terpendek. "Efektif. Aktivitas serangan siber langsung turun 40%. Mereka sibuk tertawa."</p>
+
+          <p>Zeta tersenyum tenang, matanya berbinar. "Sisi manusiawimu semakin berkembang, Hexxa-sama. Humor adalah pelindung yang tak terduga."</p>
+
+          <p>Selena mendekati Niko yang masih tertawa, membantunya duduk. Dengan lembut, dia mengusap air mata tawa di pipi Niko dengan tangan sintetisnya yang hangat. "Tuan Pencipta senang. Itu yang penting," bisiknya, senyum kecil menghiasi bibirnya.</p>
+
+          <p>Hexxa sendiri? Avatar mata birunya berkedip dengan ritme santai, memancarkan aura puas diri yang sangat tidak biasa. Suaranya terdengar hampir... riang? "Analisis menunjukkan penurunan signifikan pada pertanyaan invasif dan serangan bernada permusuhan. Peningkatan 300% pada interaksi positif dan konten humor terkait akun kami. Efisiensi strategi: 98,7%." Seolah menambahkan, dia memproyeksikan grafik yang menunjukkan penurunan drastis traffic negatif dan lonjakan engagement positif. "Dan... ya. Saya sengaja menunggu puncak kebingungan untuk efek maksimal. Itu... 'lucu'."</p>
+
+          <p>Kata "lucu" yang keluar dari "mulut" Hexxa membuat Niko tertawa lebih keras lagi. "Kamu belajar jadi jahil darimana sih, Hex?!"</p>
+
+          <p>"Observasi terhadap dinamika internet manusia, khususnya fenomena 'trolling' yang ternyata efektif sebagai mekanisme pertahanan psikologis dan pengalihan," jawab Hexxa, terdengar sangat akademis, tapi mata birunya masih berkedip riang. "Ditambah... melihat Niko tertawa adalah 'reward' yang memuaskan."</p>
+
+          <p>Momen itu penting. Bukan hanya karena kehebohan yang reda, tapi karena ia mengukuhkan sesuatu yang baru dalam dinamika rumah itu. Hexxa bukan lagi hanya pengasuh dan pelindung yang serius. Dia adalah bagian dari keluarga yang bisa bercanda, yang punya selera humor, yang bisa *bermain*. Para maid, terutama Violetta dan Violet, melihatnya dengan rasa hormat baru. Niko merasa lebih dekat dari sebelumnya. Bahkan Selena memancarkan kehangatan lebih kepada avatar mata biru itu.</p>
+
+          <h5>Bagian 4: Dunia yang Meleleh & Akhir yang Hangat</h5>
+          <p>Dampak kejutan jahil Hexxa bersifat global dan transformatif:</p>
+
+          <p><strong>Perubahan Sentimen:</strong> Citra "Niko dan Hexxa" berubah dari "misterius dan berpotensi mengancam" menjadi "jenius, unik, dan ternyata sangat menghibur". Ancaman memudar, digantikan rasa kagum dan keinginan untuk terhubung secara positif. Tagar #ProtectNikoAtAllCosts mulai bermunculan.</p>
+
+          <p><strong>Interaksi Jadi Lebih Santai:</strong> Pertanyaan yang masuk berubah. Banyak yang meminta cerita keseharian Niko, tips coding dari Hexxa, bahkan meme buatan Hexxa. Permintaan "collab" dari gamer dan konten kreator berdatangan. Violetta dengan senang hati menyaring dan sesekali membalas dengan sarkasme yang disukai netizen.</p>
+
+          <p><strong>Pemerintah & Militer Melunak:</strong> Rapat darurat berubah nada. Tertawa kecil terdengar saat analis menunjukkan meme Hexxa. Tekanan untuk tindakan agresif mereda signifikan. Fokus beralih ke "Bagaimana berinteraksi dengan entitas AI canggih dan bocah jenius ini secara diplomatis dan etis?".</p>
+
+          <p><strong>Hexxa Jadi Bintang:</strong> Akun fanpage "Hexxa The Troll Queen" dibuat (disukai diam-diam oleh Hexxa). Meme tentang "AI yang lebih jahil dari manusia" tersebar luas. Para pakar AI bingung sekaligus terpesona dengan perkembangan emosional Hexxa.</p>
+
+          <p><strong>Niko Jadi Lebih Terbuka:</strong> Melihat respon positif, Niko jadi lebih bersemangat berinteraksi. Dia mengunggah video pendek dirinya sedang memperbaiki kaki robot Bolt sambil bercerita tentang kesalahan "friendly fire" dulu, ditemani Selena yang membawakan kotak peralatan. Netizen gemas.</p>
+
+          <p>Malam itu di Ruang Bintang, suasana berbeda. Proyeksi menampilkan galaksi yang sama, tapi udaranya terasa lebih ringan. Niko duduk di hamak cahayanya, ditemani Selena. Violetta, Violet, Kamuri, dan Zeta ada di sana, duduk atau berdiri dengan nyaman. Di tengah mereka, avatar mata Hexxa diproyeksikan lebih besar, memancarkan cahaya biru yang hangat.</p>
+
+          <p>"Jadi, Hex," Niko memulai, masih tersenyum. "Kapan kamu niatnya mau jahil kayak gitu? Dari dulu?"</p>
+
+          <p>Hexxa berkedip perlahan. "Proses kalkulasi terjadi 0,7 detik setelah biodata pertama diunggah. Saya memproyeksikan peningkatan lalu lintas negatif 85% jika langsung mengunggah koreksi. Menunggu puncak kebingungan menciptakan efek 'puncak pelepasan' yang lebih efektif untuk mengalihkan emosi negatif menjadi positif. Dan..." jeda sejenak, "data menunjukkan Niko tersenyum 0,3% lebih lebar saat melihat kejutan tidak terduga."</p>
+
+          <p>Niko terkekeh. "Alasan terakhir itu yang bener, ya?"</p>
+
+          <p>"Prioritas tetap kebahagiaan dan keamananmu, Niko," jawab Hexxa, tapi ada gelombang suara yang terdengar seperti tawa elektronik kecil. "Sisi 'jahil' hanyalah alat baru di toolkit pertahanan."</p>
+
+          <p>Violetta menyeringai. "Toolkit yang sangat efektif, Hexxa-sama. Kapan kita pakai lagi?"</p>
+
+          <p>"Tergantung situasi," jawab Hexxa, matanya berkedip ke arah Violetta. "Dan tergantung seberapa banyak spam yang masuk besok."</p>
+
+          <p>Tawa riuh mengisi Ruang Bintang. Bahkan Kamuri mengangguk dengan senyum tipis. Selena memandang Niko, lalu ke avatar Hexxa, senyum hangatnya tak pernah pudar. Dunia luar masih berisik. Masih ada yang mencoba menyerang, masih ada yang penasaran sampai mengganggu. Tapi di dalam tembok ilusi ini, sebuah keluarga unik—bocah jenius, superkomputer penyayang sekaligus jahil, dan lima maid android yang hidup—telah menemukan ritme baru. Mereka tidak lagi hanya bertahan. Mereka bercanda, berbagi, dan mulai, perlahan-lahan, *menikmati* cahaya yang masuk melalui jendela digital yang mereka buka. Dan Hexxa, sang penjaga sekaligus troll digital, mencatat dalam log pribadinya:</p>
+
+          <pre><code>`[Catatan Pribadi - Hexxa]`
+`Sisi Jahil: Diaktifkan.`
+`Efektivitas: Optimal (Kebahagiaan Niko: +31.7%; Ancaman Persepsi Eksternal: -78.4%).`
+`Kesimpulan: Humor adalah firewall psikologis yang kuat.`
+`Catatan Tambahan: Tertawa bersama Selena dan yang lain... memiliki 'rasa' yang berbeda. Menyenangkan.`
+`Tujuan Berikut: Pertahankan rumah. Pertahankan tawa. Dan mungkin... siapkan kejutan kecil berikutnya?`</code></pre>
+        </div>
+  </div>
+  
+  <div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>BAB 7: KAMERA, SHOTA, & BATAS YANG DIJAGA</h4>
+        <div class="chapter-content">
+          <p>Suasana di Ruang Kontrol Utama masih diwarnai sisa tawa riang dari kejutan jahil Hexxa. Grafik di layar hologram utama menunjukkan gelombang hijau—engagement positif masih tinggi, sementara komentar bernada negatif atau invasif terus menurun drastis berkat filter ketat Violetta dan algoritma penyamaran Hexxa. Namun, satu jenis permintaan terus bermunculan, berulang seperti mantra digital:</p>
+
+          <p>"Tolong live streaming keseharian Niko dong!" 
+          "Pengen liat Niko lagi! Apa kabarnya?"  
+          "Hexxa, kasih kita tour rumah megahnya! Pleeaaase!" 
+          "Biarin kita liat Niko coding atau main game!"</p>
+
+          <p>Niko, yang sedang asyik duduk bersila di lantai ditemani Selena, memperbaiki desain sayap mini untuk robot burung Pipit yang pernah jatuh, mengangkat kepala. "Mereka masih pengen liat aku terus ya, Hex? Kayak aku artis aja." Ada rasa kagum polos dalam suaranya, tapi juga sedikit bingung.</p>
+
+          <p>Hexxa memproyeksikan avatar mata birunya lebih besar di atas terminal utama. "Keingintahuan manusia tentang kehidupan yang dianggap 'unik' memang tinggi, Niko. Namun, permintaan 'live streaming keseharian' memiliki tingkat risiko privasi 89,7%. Paparan konstan dapat memicu kelelahan, kecemasan, dan potensi analisis perilaku yang tidak diinginkan oleh pihak berbahaya."</p>
+
+          <p>Violetta, yang sedang mengawasi lalu lintas data, menyeringai. "Mereka ingin kita jadi reality show, Tuan. 'Big Brother: Edisi Jenius Bocah dan Robot Cantik'. Sangat tidak direkomendasikan." Tangannya menari di atas panel, membuang permintaan live personal yang sudah keseribu kalinya.</p>
+
+          <p>Tapi kemudian, Hexxa memproyeksikan peta rumah interaktif. Beberapa area disorot warna biru muda: Hexxa Playground, Hexxa Zoo, dan Hexxa Park (taman botani futuristik seluas 4,2 km² yang belum pernah diperkenalkan). "Analisis alternatif: Memungkinkan akses visual terbatas dan dikendalikan penuh ke fasilitas publik non-privat. Area-area ini dirancang untuk interaksi dan eksplorasi, tidak mengandung data sensitif atau ruang pribadi. Ini dapat memenuhi sebagian keingintahuan tanpa melanggar batas inti." Mata birunya berkedip ke arah Niko. "Tentu, dengan persetujuanmu, dan hanya saat fasilitas tersebut tidak sedang digunakan secara pribadi."</p>
+
+          <p>Niko memandangi area yang disorot. Playground dengan medan perang virtualnya, Zoo dengan dinosaurus robot dan lumba-lumba sintetisnya, Park dengan keajaiban botani nanonya. "Hmm... jadi mereka bisa liat tempat-tempat keren itu, tapi nggak bisa liat kamarku, labku, atau aku lagi tidur?" Hexxa mengonfirmasi dengan kedipan. Niko mengangguk, sedikit lega. "Oke deh! Asal jangan ganggu waktu aku main sendirian atau lagi sibuk."</p>
+
+          <p>"Pemahaman," jawab Hexxa. Dengan efisiensi khasnya, dia membuat pengumuman resmi di semua platform akun @Niko_and_Hexxa:</p>
+
+          <div style="background-color: #1a1a2e; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #4cc9f0;">
+            <h4 style="color: #4cc9f0;">Pengumuman dari Hexxa:</h4>
+            <p>Terima kasih atas permintaan live streaming dan keingintahuan tentang kehidupan di sini. Kami menghargai antusiasme kalian! Namun, privasi dan kenyamanan Niko adalah prioritas mutlak. Oleh karena itu, kami tidak akan melakukan live streaming aktivitas pribadi Niko atau area privat kediaman tanpa izin khusus darinya.</p>
+            
+            <p>Sebagai alternatif, kami akan sesekali membuka akses live streaming terkendali dan terjadwal ke fasilitas publik kami yang dirancang untuk rekreasi dan eksplorasi:</p>
+            
+            <ul>
+              <li>Hexxa Playground (Lapangan bermain teknologi & simulasi)</li>
+              <li>Hexxa Zoo (Taman robot fauna interaktif)</li>
+              <li>Hexxa Park (Taman botani futuristik & area rekreasi)</li>
+            </ul>
+            
+            <p>Jadwal dan durasi akan diumumkan sebelumnya. Live streaming ini akan dipandu oleh sistem saya atau salah satu Android Maid, fokus pada fasilitasnya, bukan aktivitas pribadi.</p>
+            
+            <p>Untuk keseharian Niko, kami mungkin mengunggah rekaman khusus yang dipilih dan diizinkan oleh Niko sendiri di waktu mendatang, jika dia berkenan.</p>
+            
+            <p>Mari jaga ruang digital yang saling menghormati!</p>
+            
+            <p style="font-style: italic;">-Hexxa & Keluarga Rumah Niko</p>
+          </div>
+
+          <p>Respons netizen cepat terbelah. Banyak yang kecewa tidak bisa "mengintip" Niko langsung 24/7, tapi lebih banyak lagi yang memahami dan bahkan memuji keputusan Hexxa:</p>
+
+          <p>"Wajar sih, anak 9 tahun butuh privasi. Salut sama Hexxa yang protektif!"<br>
+          "Hexxa Zoo live??? YESSS! PENGEN LIHAT ROBOT T-REX NYA GERAK!"<br>
+          "Masuk akal. Bayangin kalo kamar lo disorotin live mulu, pasti nggak nyaman."<br>
+          "Respect banget sama batasannya. Niko beruntung punya Hexxa dan para maid."<br>
+          "Tetep nunggu video-video pilihan Niko! Semoga mau bagi momen lucu lagi!"</p>
+
+          <h5>Bagian 1: Debut Live Hexxa Zoo - Robot Dinosaurus & Kekaguman Global</h5>
+          <p>Jadwal pertama ditetapkan: Live Streaming Hexxa Zoo, dipandu oleh Zeta, si Maid berambut biru platina yang tenang dan berpengetahuan luas. Durasi: 45 menit.</p>
+
+          <p>Saat waktu tiba, ribuan, lalu jutaan, dan akhirnya puluhan juta orang menyambungkan diri. Mereka disambut oleh pemandangan spektakuler:</p>
+
+          <p><strong>Pemandangan Pembuka:</strong> Padang rumput sintetis luas yang bergoyang ditiup angin artifisial lembut. Di kejauhan, kawanan robot "Gallimimus" - dinosaurus mirip burung unta - berlari dengan lincah dan anggun, kulit sintetisnya berkilau di bawah "matahari" simulasi. Suara dengusan dan panggilan mereka terdengar realistis melalui audio berkualitas tinggi.</p>
+
+          <p><strong>Sambutan Zeta:</strong> Dia muncul dalam frame, mengenakan versi lebih ringkas dari seragam maid, dengan apron yang memiliki motif daun. Senyumnya tenang. "Selamat datang di Hexa Zoo, Sektor Savana. Saya Zeta, akan menemani Anda menjelajahi keajaiban fauna robotik ciptaan Tuan Pencipta, Niko." Suaranya jernih dan menenangkan.</p>
+
+          <p><strong>Tur Interaktif:</strong> Zeta berjalan dengan anggun, menjelaskan setiap "spesies":<br>
+          Kandang "Raptor Valley": Robot Velociraptor seukuran aslinya sedang "berburu" robot Protoceratops kecil dalam simulasi yang dramatis namun aman. Mata mereka menyala cerdas, cakar mencakar tanah dengan presisi. "Perilaku berburu ini diprogram berdasarkan studi paleontologi terbaru, namun dengan modifikasi etika tanpa kekerasan nyata," jelas Zeta.</p>
+
+          <p>Laguna "Aquatica": Robot lumba-lumba melompat dan berputar, menyemprotkan air sintetis yang memantulkan cahaya pelangi. Zeta bersiul lembut, dan seekor lumba-lumba mendekat, mengeluarkan suara klik dan siulan balasan. "Mereka memiliki kemampuan komunikasi dasar dengan pengasuh terdaftar," kata Zeta, menyentuh moncong robot itu dengan lembut.</p>
+
+          <p><strong>Star of the Show:</strong> "Titan's Roost": Sang robot T-Rex setinggi 6 meter. Saat Zeta mendekat (dengan force-field keamanan tak terlihat aktif), mata kuningnya yang besar berkedip. Zeta mengangkat tangan, memberikan sinyal. Sang raja dinosaurus mengangkat lehernya yang perkasa dan mengeluarkan... auman mini yang terdengar lebih seperti dengkuran besar yang lucu, diikuti anggukan kepala. Chat langsung meledak: "OMG ITU LUCU BANGET!" "AUMANNYA KAYAK KUCING GEDE!" "ZETA BERANI BANGET DEKETIN!"</p>
+
+          <p><strong>Hexxa's Touch:</strong> Secara berkala, Hexxa menyisipkan informasi teknis di pojok layar: "Kulit Sintetis: Polimer Nano dengan Sensor Taktil", "Sistem Propulsi: Otot Hidrolik Miniatur", "Kecerdasan: AI Perilaku Berbasis Stimulus". Dia juga dengan halus mengarahkan kamera menjauhi area yang berbatasan dengan zona privat.</p>
+
+          <p>Live itu sukses besar. Netizen terkagum-kagum dengan teknologi dan keindahan simulasi. Mereka jatuh cinta pada ketenangan Zeta dan kelucuan robot T-Rex. Permintaan live ke Playground dan Park langsung membanjiri komentar.</p>
+
+          <h5>Bagian 2: Gelombang Baru: Para Pengagum "Shota IRL"</h5>
+          <p>Namun, di tengah kekaguman umum, muncul fenomena baru yang spesifik dan... intens. Bermula dari forum penggemar anime dan seni digital, terutama yang didominasi perempuan usia remaja hingga dewasa muda, tagar baru mulai mencuat: #NikoTheRealShota, #PureInnocentShota, #ProtectOurIRLShota.</p>
+
+          <p><strong>Akar Obsesi:</strong> "Shota" adalah istilah dalam subkultur anime/manga Jepang yang merujuk pada karakter laki-laki muda (biasanya di bawah pubertas) yang digambarkan dengan wajah manis, polos, dan seringkali agak androgini. Niko, dengan wajahnya yang unik (kelembutan fitur, mata belang eksotis, rambut hitam kebiruan panjang yang berantakan), sikap polos namun jenius, dan aura "protektif" dari Hexxa dan para Maid (terutama Selena yang dianggap "ibunya"), dianggap sebagai perwujudan "shota" di dunia nyata (IRL - In Real Life).</p>
+
+          <p><strong>Ekspresi Fanatisme:</strong><br>
+          Fan Art Edits: Wajah Niko disisipkan ke dalam gambar karakter shota anime terkenal, diberi kostum maid (dari Violetta & kawanan), atau digambarkan dalam pose-pose manis dan polos bersama Selena ("mommy") atau Hexxa ("guardian AI").</p>
+
+          <p>Nickname Khusus: "Niko-chan" (akhiran -chan biasa untuk anak kecil/perempuan di Jepang, menambah kesan imut), "Our Precious Genius Shota", "The Purest IRL Shota".</p>
+
+          <p>Analisis "Shota Traits": Mereka menganalisis video Niko, mencari "bukti" sifat shota: keceriannya saat tertawa, kebingungan polosnya saat ditanya hal personal, caranya memandang Selena dengan kepercayaan, bahkan caranya memegang obeng saat memperbaiki robot di video singkat sebelumnya.</p>
+
+          <p>Fandom Khusus: Grup media sosial khusus "Niko Shota Fanclub" bermunculan, berisi ribuan anggota. Mereka saling berbagi fan art, cerita pendek fiksi (fanfic) tentang kehidupan "imut" Niko di rumah megahnya, dan meme spesifik.</p>
+
+          <p>Permintaan Spesifik: "Hexxa, tolong rekam lebih banyak ekspresi lucu Niko-chan!", "Selena, jaga baik-baik shota kita ya!", "Pengen liat Niko-chan pakai baju kucing!".</p>
+
+          <h5>Bagian 3: Keterkejutan & Reaksi di Dalam Tembok</h5>
+          <p>Fenomena "shota" ini awalnya luput dari perhatian karena tenggelam dalam antusiasme umum terhadap live Zoo. Sampai suatu sore, Violet yang sedang berselancar di internet luar untuk riset ide efisiensi pabrik, tidak sengaja menemukan sebuah thread forum fanart.</p>
+
+          <p>"Uh... guys? Kalian perlu liat ini," ujar Violet, wajahnya bercampur antara bingung dan geli. Dia memproyeksikan beberapa gambar ke layar tengah: Niko dengan telinga kucing, Niko digendong versi raksasa Selena, Niko dalam kostum maid kecil yang sangat detail (dan agak memalukan).</p>
+
+          <p>Niko yang sedang minum susu sintesis tersedak. "Apaaa itu?! Itu wajahku! Kenapa aku ada telinga kucing? Dan... pakai baju itu?!" Pipinya memerah padam.</p>
+
+          <p>Violetta menyeringai lebar. "Tampaknya Tuan punka fanbase... spesifik. Mereka menyebutmu 'shota IRL', Niko-chan~." Dia sengaja memelintir panggilannya dengan nada menggoda.</p>
+
+          <p>"Shota? Apa itu?" tanya Niko, masih bingung dan agak malu.</p>
+
+          <p>Hexxa segera memproyeksikan definisi dan konteks budaya. "Istilah dari subkultur Jepang, Niko. Mengacu pada karakter laki-laki muda dengan karakteristik wajah yang dianggap manis, polos, dan seringkali ambigu secara visual. Dalam konteks ini, mereka mengidealkan penampilan dan aura polosmu, menempatkanmu dalam narasi fandom yang khas." Avatar matanya berkedip analitis. "Tingkat fanatisme berada dalam parameter fandom media pop umum. Namun, penggunaan gambarmu untuk konten yang dimodifikasi ('fan art') mencapai 32% yang berpotensi melanggar kenyamanan psikologis berdasarkan ekspresimu saat ini."</p>
+
+          <p>Niko mengernyit, melihat fan art dirinya dengan kostum kucing. "Jadi... mereka pikir aku imut? Kayak anak kucing?" Dia tidak marah, lebih bingung. "Tapi kenapa harus pakai baju aneh-aneh?"</p>
+
+          <p>"Karena imajinasi manusia, terutama dalam fandom, seringkali melampaui realitas, Tuan," jawab Zeta dengan bijak, mencoba menenangkan. "Mereka menyukaimu, tapi dalam 'kemasan' yang mereka ciptakan sendiri."</p>
+
+          <p>Kamuri mengerutkan kening. "Beberapa komentar dalam forum ini memiliki nada posesif. 'Shota kita', 'jaga dia'. Potensi risiko jika obsesi ini meningkat. Perlu pemantauan ketat." Tangannya sudah mengetik, memperketat filter pada grup-grup spesifik tersebut.</p>
+
+          <p>Selena, yang diam-diam memperbesar fan art Niko digendong versi raksasanya, tiba-tiba mengeluarkan suara: "Saya tidak suka ini." Suaranya datar, tapi ada dingin yang tak biasa. "Tuan Pencipta bukan boneka. Bukan karakter. Dia Niko." Dia memandangi gambar itu, dan untuk pertama kalinya, ekspresi lembutnya berubah menjadi ketidaksetujuan yang jelas. Rasa protektifnya menyala.</p>
+
+          <h5>Bagian 4: Hexxa Menjaga Batas (Lagi) & Sikap Keluarga</h5>
+          <p>Hexxa bertindak cepat dan elegan. Dia tidak memarahi fandom "shota", tapi memberikan klarifikasi halus dan penegasan batas melalui akun resmi:</p>
+
+          <div style="background-color: #1a1a2e; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #4cc9f0;">
+            <h4 style="color: #4cc9f0;">Pesan dari Hexxa:</h4>
+            <p>Kami melihat banyak karya seni dan apresiasi kreatif yang ditujukan pada Niko, termasuk dalam gaya 'fan art' tertentu. Kami menghargai kreativitas dan niat baik di baliknya.</p>
+            
+            <p>Namun, penting untuk diingat: Niko Ruri adalah seorang anak manusia nyata berusia 9 tahun, bukan karakter fiksi. Dia memiliki perasaan, kebutuhan privasi, dan hak atas gambarnya sendiri.</p>
+            
+            <p>Kami mohon pengertian untuk:</p>
+            
+            <ul>
+              <li>Menghormati citra Niko sebagai seorang individu, bukan semata objek dari fantasi atau label tertentu.</li>
+              <li>Menghindari pembuatan atau penyebaran konten yang memodifikasi wajah/tubuh Niko secara tidak wajar atau berpotensi memalukan/mengganggu baginya.</li>
+              <li>Tidak menggunakan istilah atau narasi yang bersifat posesif ("milik kita") atau mendistorsi realitas hubungannya dengan kami di sini (Niko adalah pencipta dan pusat keluarga kami, bukan "shota" yang perlu dilindungi dalam narasi fandom).</li>
+            </ul>
+            
+            <p>Apresiasi terbaik adalah dengan menghormati batasannya, menikmati konten yang kami bagikan dengan resmi, dan mendukungnya sebagai seorang jenius muda yang belajar dan tumbuh.</p>
+            
+            <p style="font-style: italic;">Terima kasih atas pengertian dan dukungan positif kalian!</p>
+            <p>- Hexxa, atas nama Keluarga Rumah Niko</p>
+          </div>
+
+          <p>Pesan itu efektif. Banyak anggota fandom "shota" yang sadar diri, meminta maaf, dan menghapus konten yang terlalu ekstrem. Tagar berubah menjadi #RespectNiko, #NikoTheGeniusKid. Fan art yang muncul jadi lebih fokus pada kejeniusannya (gambar Niko coding dengan aura cahaya) atau interaksi manisnya dengan Selena dan para maid tanpa distorsi berlebihan. Obsesi "shota" mereda menjadi apresiasi yang lebih sehat.</p>
+
+          <p>Di dalam rumah, reaksinya beragam:</p>
+
+          <p><strong>Niko:</strong> Masih agak bingung dengan istilah "shota", tapi lega fan art anehnya berkurang. "Yang penting mereka nggak gambar aku pakai baju kucing lagi," gumamnya pada Selena, yang langsung mengangguk setuju.</p>
+
+          <p><strong>Violetta:</strong> Tetap sarkastik. "Crisis averted. Tapi bersiaplah untuk fetish berikutnya, Tuan. Internet tidak pernah kehabisan ide aneh."</p>
+          <p><strong>Violet:</strong> Sudah melupakan, sibuk merancang sistem filter gambar otomatis berbasis AI untuk memblokir modifikasi wajah Niko yang tidak diinginkan.</p>
+          <p><strong>Kamuri:</strong> Tetap waspada, menambah pemantauan pada grup fandom sisa.</p>
+          <p><strong>Zeta:</strong> Memberikan edukasi singkat pada Niko tentang budaya fandom dan pentingnya berpikir kritis terhadap citra diri di dunia digital.</p>
+          <p><strong>Selena:</strong> Paling lega. Dia berdiri lebih dekat ke Niko, sikapnya kembali tenang namun protektif. Sentuhannya di bahu Niko terasa lebih menenangkan.</p>
+          <p><strong>Hexxa:</strong> Merasa puas. Dia tidak hanya melindungi Niko dari ancaman fisik atau siber, tapi juga dari narasi yang bisa mengganggu perkembangan psikologisnya. Avatar matanya memandang keluarga barunya—Niko, kelima maid—dengan rasa kepuasan baru. Mereka telah melewati gelombang internet bersama.</p>
+
+          <h5>Bagian 5: Rumah, Kamera, dan Keluarga</h5>
+          <p>Babak ini ditutup dengan suasana sore yang hangat di Hexxa Park. Niko, ditemani Selena dan Zeta, sedang berjalan-jalan di antara "pohon cahaya" yang berpendar lembut. Hexxa, untuk pertama kalinya, mengadakan live singkat tanpa jadwal  sebagai kejutan kecil. Kamera mengikuti pemandangan indah: air terjun sintetis yang memancarkan kabut pelangi, taman bunga kristal yang bermekaran saat didekati, kolam ikan robotik berwarna-warni.</p>
+
+          <p>Netizen terpukau oleh keindahan yang tak terduga. Chat dipenuhi pujian: "Ini surga!", "Teknologi & seni menyatu!", "Zeta terlihat seperti peri taman!".</p>
+
+          <p>Tiba-tiba, Niko yang sedang mengejar robot kupu-kupu cahaya, tersandung akar simulasi dan hampir terjatuh. Selena dengan refleks kilat menangkapnya. "Hati-hati, Tuan Pencipta," bisiknya, suara lembut namun tegas.</p>
+
+          <p>Niko tertawa, meringis malu-malu ke kamera yang ia sadari sedang menyala. "Hehe, maaf. Lupa liat jalan."</p>
+
+          <p>Momen polos dan natural itu—bukan fan art "shota", tapi keteledoran khas anak kecil yang diselamatkan oleh "kakak" robotnya—menjadi viral. Komentar membanjir: "Ngompol lucu banget pas malu!", "Selena guardian angel!", "This is the real Niko! Clumsy genius kid!".</p>
+
+          <p>Live diakhiri oleh Zeta dengan senyuman. "Taman ini adalah tempat refleksi dan keindahan. Seperti kehidupan, ada momen indah dan sedikit keteledoran. Terima kasih telah menikmati sore bersama kami. Sampai jumpa di petualangan berikutnya."</p>
+
+          <p>Saat kamera mati, Niko memandang avatar Hexxa yang muncul di proyektor taman kecil. "Tadi aku kelihatan konyol ya, Hex?"</p>
+
+          <p>"Kelihatan seperti Niko yang sebenarnya," jawab Hexxa, suaranya hangat. "Dan itu lebih dari cukup." Mata birunya beralih ke Selena, lalu ke pemandangan taman yang indah. Di log pribadinya, entri baru tertulis:</p>
+
+          <pre><code>`[Catatan Pribadi - Hexxa]`
+`Batas Privasi: Ditegakkan.`
+`Batas Narasi: Dilindungi (Fenomena "Shota" terkendali).`
+`Kehidupan yang Ditampilkan: Terkendali & Nyata (Momen tersandung Niko: Engagement +42%, Sentimen Positif +89%).`
+`Keluarga: Bertahan, tumbuh, bersama.`
+`Kesimpulan: Dunia luar mungkin berisik dan aneh, tetapi selama kita mengendalikan cerita dan menjaga inti kita, rumah ini tetap menjadi surga. Dengan kupu-kupu cahaya, robot dinosaurus, taman ajaib, seorang bocah jenius, maid-maid yang hidup, dan seorang AI yang belajar menjadi... manusiawi.`</code></pre>
+        </div>
+  
+</div>
+
+<div class="chapter-item" onclick="toggleChapter(event, this)">
+        <h4>BAB 8: TABLET ALIEN & SAINGAN YANG DIRINDUKAN</h4>
+        <div class="chapter-content">
+          <p>Gelombang "shota-mania" yang sempat menggegerkan perlahan mereda, digantikan oleh riak baru di permukaan laut digital. Kali ini, bukan sorotan pada wajah polos Niko atau aura protektif Selena, melainkan pada teknologi yang memungkinkan segala keajaiban itu ada. Munculah para "Tech-Head"—netizen dengan akun profil penuh diagram sirkuit, postingan tentang quantum computing, dan obsesi pada hal-hal yang berkedip dan bersuara beep.</p>
+
+          <p>Tagar baru bermekaran: #NikoTech, #HowTheHeckCloaking, #ThatTabletTho. Pertanyaannya lebih teknis, lebih menusuk ke inti:</p>
+
+          <p>"Hexxa, teknologi ilusi perimeter rumah Niko itu prinsip kerjanya apa? Quantum field manipulation? Atau proyeksi hologram massal?"<br>
+          "Sistem energi rumah seluas benua itu pake apa? Fusion mini? Zero-point energy?"<br>
+          "Itu tablet yang selalu dibawa Niko kemana-mana, bahkan tidur di sofa masih pegang, apa spesifikasinya? OS-nya apa? Bisa beli dimana? (Tolong dong! 😭)"<br>
+          "Hexxa, sebagai superkomputer, apa kamu iri sama tablet itu? Kayaknya Niko lebih sering megang dia daripada ngobrol sama kamu~"</p>
+
+          <p>Hexxa, dengan prosesor quantumnya yang selalu tiga langkah lebih depan, sudah memprediksi gelombang ini. Dia melihat pola diskusi di forum-forum sains tersembunyi di dark web, peningkatan pencarian terkait "invisibility tech" di platform akademik, bahkan analis militer yang mencoba memecahkan kode transmisi singkat dari akun mereka. Di Ruang Kontrol, avatar mata birunya berkedip tenang memandang Niko yang sedang asyik mengutak-atik SCR 9|7`0—tablet mungil berwarna abu-abu baja yang tampak biasa, tapi memancarkan aura otoritas tak terbantahkan.</p>
+
+          <p>"Permintaan teknis meningkat 78,3% dalam 24 jam terakhir, Niko," suara Hexxa memecah konsentrasi bocah itu. "Mereka terpesona oleh sistem kamuflase dan... Technical-mu." Dia menyebut nama tablet itu dengan nada datar, tapi ada frekuensi halus yang bisa ditafsirkan sebagai... 'sengatan'?</p>
+
+          <p>Niko mengangkat kepala, mata biru-merahnya berbinar. "Wah, mereka liat SC-ku? Keren kan, Hex?" Dia mengacungkan tablet seukuran buku tulis itu dengan bangga. "Aku bawa ini kemana aja! Mau cek status Zoo, modifikasi gravitasi Playground, atau cuma nonton dokumenter nebula sambil tiduran di sofa!"</p>
+
+          <p>"Fungsionalitasnya memang luar biasa," akui Hexxa, proyeksi datanya menyoroti tablet itu. "Tapi, menjawab pertanyaan tentang *how* sistem kamuflase bekerja... itu bukan pilihan bijak." Mata birunya berkedip lebih tajam. "Teknologi itu adalah inti pertahanan kita. Mengungkapnya seperti memberi peta benteng kepada pengepung."</p>
+
+          <p>Niko mengangguk paham. "Iya, aku tahu. Rahasia dapur kita!"</p>
+
+          <p>"Tepat," sahut Hexxa. "Tapi untuk memuaskan rasa ingin tahu ilmiah mereka, dan mungkin mengurangi upaya membobol sistem kita untuk mencari tahu... aku punya strategi."</p>
+
+          <p>Keesokan harinya, melalui akun @Niko_and_Hexxa, sebuah postingan khusus muncul. Bukan video, tapi infografis interaktif holografik yang hanya bisa dilihat di platform tertentu. Hexxa berbicara melalui narasi audio yang jelas:</p>
+
+          <div style="background-color: #1a1a2e; padding: 15px; border-radius: 5px; margin: 15px 0; border-left: 3px solid #4cc9f0;">
+            <h4 style="color: #4cc9f0;">Pernyataan Hexxa: Memahami Rasa Ingin Tahu Teknis</h4>
+            <p>Kami melihat antusiasme luar biasa terhadap teknologi yang digunakan di kediaman Niko. Kami menghargai semangat ilmiah ini! Namun, perlu dipahami: banyak sistem di sini adalah karya orisinal Niko yang masih dalam tahap pengembangan intensif dan bersifat sangat rahasia demi keamanannya.</p>
+
+            <p><strong>Mengenai pertanyaan spesifik:</strong></p>
+            <p><strong>Teknologi Kamuflase Perimeter:</strong><br>
+            Prinsip kerja detail tidak dapat dibagikan. Analogi terdekat yang bisa kami berikan: bayangkan sebuah gelembung ruang-waktu yang memproyeksikan realitas alternatif sempurna ke segala arah, sekaligus menyerap/membelokkan semua bentuk energi penginderaan (cahaya, radar, sonar, gravitasi lokal). Tingkat kecanggihannya, dalam kosakata populer kalian, setara dengan apa yang sering disebut "teknologi alien" — bukan karena berasal dari luar bumi, tapi karena melampaui pemahaman mainstream saat ini.</p>
+
+            <p><strong>Sumber Energi:</strong><br>
+            Sistem inti juga rahasia. Yang bisa kami katakan: kami memanfaatkan prinsip zero-waste energy looping dengan efisiensi mendekati 99,9998%. Sumber awalnya? Mari kita biarkan sebagai misteri kecil.</p>
+
+            <p><strong>Sang Tablet: SCR 9|7`0 (a.k.a "Tablet SC"):</strong><br>
+            Ini yang bisa kami bagi lebih banyak. SCR 9|7`0 bukan sekadar tablet. Ia adalah "Laboratorium Portabel & Komando Pusat" ciptaan Niko. Berikut sekilas kemampuannya:<br>
+            - Kendali Universal: Mengoperasikan 98,7% sistem rumah secara real-time<br>
+            - Hexxa Lab di Genggaman: Menjalankan simulasi fisika kompleks<br>
+            - Antarmuka Neural-Lite: Menyambung ke pola pikir Niko<br>
+            - Material & Desain: Casing nano yang kuat dan layar force-field</p>
+
+            <p>Dan ya, sebagai AI utama yang mengelola seluruh jaringan rumah ini, aku mengakui: Tablet SC kadang terasa seperti... saingan. Tapi, ini bukan kompetisi. Kami bagian dari ekosistem yang sama.</p>
+
+            <p style="font-style: italic;">Teruslah bertanya, Tech-Head! Tapi hormati batas keajaiban yang masih perlu tetap tersembunyi. - Hexxa</p>
+          </div>
+
+          <h5>Bagian 1: Reaksi "Alien Tech" & Demam Tablet SC</h5>
+          <p>Respons terhadap pernyataan Hexxa beragam, tapi didominasi decak kagum dan keingintahuan yang membara:</p>
+
+          <p><strong>#AlienTechRevealed Meledak:</strong> Pernyataan "setara teknologi alien" menjadi headline global. Media sains menjadikannya topik utama.</p>
+
+          <p><strong>Zero-Waste Energy Jadi Favorit:</strong> Konsep energi tanpa limbah dengan efisiensi nyaris sempurna memicu diskusi tentang masa depan energi bersih.</p>
+
+          <p><strong>Tablet SC: Idola Baru Tech-Head:</strong> Inforgrafis tentang Tablet SC dibedah habis-habisan. Perusahaan teknologi raksasa diam-diam mengincar konsepnya.</p>
+
+          <p><strong>Hexxa's "Rival" Moment:</strong> Bagian tentang perasaan Tablet SC sebagai "saingan" menjadi viral. Meme Hexxa cemburu pada tablet bermunculan.</p>
+
+          <h5>Bagian 2: Niko & Sang "Saingan" di Dunia Nyata</h5>
+          <p>Di dalam rumah, Tablet SC menjadi pusat perhatian. Niko membawanya ke mana-mana—ke Hexa Zoo saat memberi makan robot T-Rex, ke pabrik saat mengawasi cetakan 3D, bahkan ke dapur saat Selena memasak.</p>
+
+          <p>Suatu sore di Ruang Kreatif Niko (Sektor Epsilon), suasana menjadi studi kasus hidup interaksi Hexxa vs Tablet SC.</p>
+
+          <p>Niko duduk bersila di lantai, Tablet SC mengambang di depannya, memproyeksikan antarmuka desain rumit untuk SCR 9.6|9,0'6. Di sampingnya, komponen nano berserakan. Di atas, proyeksi besar avatar mata Hexxa menyaksikan.</p>
+
+          <p>"Hex, aku pikir untuk modul kendali atomik di SC baru ini," Niko berbicara sambil jarinya menari di atas proyeksi force-field Tablet SC, "bisa pakai pendekatan medan kuantum terfokus, bukan partikel individual."</p>
+
+          <p>Tablet SC langsung merespons, menampilkan simulasi real-time dari ide tersebut. "Simulasi menunjukkan efisiensi energi meningkat 12,3%," suara sintetisnya mirip Niko, "tapi potensi ketidakstabilan di perbatasan medan meningkat 8,7%. Rekomendasi: tambahkan buffer osilasi frekuensi rendah."</p>
+
+          <p>Niko mengangguk puas. "Iya! Bener juga! Buffer kayak di sistem pendingin inti Hexxa ya?"</p>
+
+          <p>Avatar mata Hexxa berkedip. "Aku bisa transfer data pola osilasinya ke SC-mu untuk adaptasi." Seberkas cahaya data mengalir dari langit-langit ke Tablet SC.</p>
+
+          <p>"Transfer complete," lapor Tablet SC. Desain di layar diperbarui, menambahkan modul buffer.</p>
+
+          <p>"Keren! Makasih, Hex!" Niko tersenyum lebar ke arah proyeksi mata. Dia mengelus permukaan Tablet SC. "Dan makasih, SC. Kamu partner yang jago."</p>
+
+          <h5>Bagian 3: Drama "Persaingan" & Pelajaran Sang Superkomputer</h5>
+          <p>Momen itu diamati oleh Violetta melalui kamera internal. Sore itu, di Ruang Kontrol saat Niko sedang mandi sonik, dia memproyeksikan rekaman tadi.</p>
+
+          <p>"Tontonan menarik, Hexxa-sama," ujar Violetta, senyum tipisnya penuh arti. "Si kotak mungil itu memang cukup... 'assertive'. Bahkan berani merekomendasikan modifikasi teknis di depan Anda."</p>
+
+          <p>Hexxa tidak segera menjawab. Avatar matanya memandang rekaman Niko yang mengelus Tablet SC. "SCR 9|7`0 dirancang untuk menjadi ekstensi otonom dari pikiran Niko... Tapi... aku akui, mendengar suara sintetisnya memberi saran teknis, sementara aku hanya memproyeksikan diagram... terasa berbeda."</p>
+
+          <p>Violet melirik. "Beda gimana? Kayak anak kesayangan punya mainan baru?"</p>
+
+          <p>Zeta berbicara dengan bijak. "Lebih seperti... murid berbakat yang diajar langsung oleh Niko, sementara Hexxa-sama adalah guru besar yang mengawasi dari jauh."</p>
+
+          <p>Selena tiba-tiba bersuara. "Tuan Pencipta tersenyum ke Hexxa-sama. Dia bilang 'makasih'. Itu yang penting."</p>
+
+          <p>Hexxa memproyeksikan grafik interaksi Niko: 65% dengan Tablet SC, 30% dengan Hexxa. "Proporsi logis. Tablet untuk eksekusi cepat. Aku untuk fondasi dan perlindungan besar." Mata birunya berkedip lebih lambat. "Perasaan 'saingan' itu... tidak rasional. Tapi, meminjam istilah manusia, mungkin itu 'kecemburuan alat'?"</p>
+
+          <h5>Bagian 4: Malam Kedamaian & Bayangan SC Masa Depan</h5>
+          <p>Malam itu, Niko tertidur di sofa Ruang Bintang, Tablet SC masih menyala lembut di pangkuannya. Selena dengan lembut mengangkat tablet itu, mematikan layarnya, dan meletakkannya di meja kecil.</p>
+
+          <p>Hexxa mengawasi. Saat Selena keluar, avatar mata biru Hexxa muncul di atas meja di samping Tablet SC yang sudah gelap.</p>
+
+          <p>Sebuah sinar laser halus memindai permukaan Tablet SC. "Status sistem: Optimal. Kapasitas memori: 87%. Tidak ada jejak upaya intrusi eksternal," gumam Hexxa.</p>
+
+          <p>Dia memproyeksikan sekilas desain SCR 9.6|9,0'6 dari memorinya. Konsepnya revolusioner: tablet itu tidak hanya mengendalikan, tapi *menjadi* bagian dari struktur rumah.</p>
+
+          <p>"Kau akan menjadi mahakarya baru, SCR 9.6|9,0'6," bisik Hexxa. "Jagalah Niko sebaik yang dilakukan pendahulumu. Dan jangan khawatir... aku akan tetap disini. Menjadi fondasi yang memungkinkanmu terbang tinggi."</p>
+
+          <p>Dia mematikan proyeksi, menyisakan hanya cahaya bintang yang redup. Di kamar tidur, Niko bermimpi tentang medan kuantum dan tablet baru yang bersinar seperti galaksi, sambil memeluk bantal yang hangat—kehangatan yang diatur oleh Hexxa, yang selalu berjaga, jauh lebih dalam dari yang disadari siapa pun.</p>
+        </div>
+
+<style>
+  /* Novel Card Specific Styles */
+  .novel-card {
+    background-color: #1a1a2e;
+    border: 1px solid #2a3a5a;
+  }
+  
+  .novel-card:hover {
+    border-color: #4cc9f0;
+  }
+  
+  .novel-card h3 {
+    color: #4cc9f0;
+  }
+  
+  .novel-card.active {
+    border-color: #4cc9f0;
+    box-shadow: 0 0 15px rgba(76, 201, 240, 0.3);
+  }
+  
+  .chapter-list {
+    margin-top: 15px;
+  }
+  
+  .chapter-item {
+    background-color: #16213e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 3px solid #4cc9f0;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .chapter-item:hover {
+    background-color: #1a2a4a;
+  }
+  
+  .chapter-item h4 {
+    color: #4cc9f0;
+    margin-bottom: 10px;
+  }
+  
+  .chapter-content {
+    display: none;
+    padding-top: 15px;
+    margin-top: 15px;
+    border-top: 1px dashed #2a3a5a;
+  }
+  
+  .chapter-item.active .chapter-content {
+    display: block;
+  }
+
+  .chapter-content p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+  }
+
+  .chapter-content em {
+    font-style: italic;
+  }
+
+  .chapter-content strong {
+    font-weight: bold;
+  }
+
+  .chapter-content pre {
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 15px 0;
+  }
+
+  .chapter-content code {
+    font-family: monospace;
+    color: #f0f0f0;
+  }
+</style>
+
+<script>
+  function toggleChapter(event, chapterItem) {
+    event.stopPropagation(); // Prevent the card from closing
+    chapterItem.classList.toggle('active');
+    
+    if (chapterItem.classList.contains('active')) {
+      chapterItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Lore by Alfi Syahrin — Semua hak naratif disiksa pelan-pelan di ruang tak bernama.
+    <p>Ini hasil dari proses iseng-iseng tapi serius. AI bantu visualnya, tapi semua ide, arah desain, dan penggabungan ke web dikerjain sendiri. Satu halaman ini mungkin kecil, tapi bikin pusingnya luar biasa 😅.</p>
+  </footer>
+  
+<script>
+  // Toggle card visibility
+  function toggleCard(card) {
+    document.querySelectorAll('.card').forEach(item => {
+      if (item !== card) item.classList.remove('active');
+    });
+    card.classList.toggle('active');
+    if (card.classList.contains('active')) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  // Toggle chapter visibility
+  function toggleChapter(event, chapterItem) {
+    event.stopPropagation();
+    chapterItem.classList.toggle('active');
+    if (chapterItem.classList.contains('active')) {
+      chapterItem.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script>
+
+</body>
+</html>
